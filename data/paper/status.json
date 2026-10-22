@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "utc_started": "2026-10-08T12:03:20.083956+00:00",
+  "pid": 32505,
+  "expected_jobs": 336,
+  "completed_jobs": 336,
+  "current_job": "",
+  "current_log": "",
+  "utc_updated": "2026-10-09T11:50:05.552421+00:00",
+  "utc_finished": "2026-10-09T11:50:05.552410+00:00"
+}

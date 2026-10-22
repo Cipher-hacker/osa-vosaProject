@@ -1,0 +1,2 @@
+n_clients,active_clients,committee_size,threshold,vector_len,repeats,client_compute_s_mean,client_compute_s_stdev,committee_compute_s_mean,committee_compute_s_stdev,server_compute_s_mean,server_compute_s_stdev,online_wall_s_mean,online_wall_s_stdev,total_bytes_mean,total_bytes_stdev
+1000,800,20,16,10000,1,21.768700049931248,0,0.5518377294375,0,444.194768102,0,1231.8441296869998,0,4037383040,0

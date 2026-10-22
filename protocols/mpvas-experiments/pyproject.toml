@@ -1,0 +1,31 @@
+[project]
+name = "mpvas-experiments"
+version = "1.0.0"
+
+dependencies = [
+    "Charm-Crypto==0.50",
+    "matplotlib==3.7.5",
+    "pandas==2.0.3",
+    "pycryptodomex==3.20.0",
+]
+requires-python = "==3.8.18"
+
+authors = [{name = "Marco Palazzo"}, {name = "Florine W. Dekker"}]
+description = "Source code underlying the publication 'Privacy-Preserving Data Aggregation with Public Verifiability Against Internal Adversaries'."
+readme = "README.md"
+
+[project.optional-dependencies]
+contribute = [
+    "black==24.8.0",
+    "mypy==1.14.1",
+    "pandas-stubs==2.0.3.230814",
+]
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+# Intentionally left blank
+
+[tool.setuptools]
+package-dir = {"mpvas-experiments" = ""}

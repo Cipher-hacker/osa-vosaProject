@@ -1,0 +1,24 @@
+[client timing] stage=serial phase=warmup sample=1 seconds=0.021820
+[client timing] stage=serial phase=warmup sample=2 seconds=0.019600
+[client timing] stage=serial phase=warmup sample=3 seconds=0.019349
+[client timing] stage=serial phase=measured sample=1 seconds=0.019530
+[client timing] stage=serial phase=measured sample=2 seconds=0.019508
+[client timing] stage=serial phase=measured sample=3 seconds=0.019481
+[client timing] stage=serial phase=measured sample=4 seconds=0.019479
+[client timing] stage=serial phase=measured sample=5 seconds=0.019601
+[client timing] stage=serial phase=measured sample=6 seconds=0.019451
+[client timing] stage=serial phase=measured sample=7 seconds=0.019497
+[client timing] stage=serial phase=measured sample=8 seconds=0.019528
+[client timing] stage=serial phase=measured sample=9 seconds=0.019471
+[client timing] stage=serial phase=measured sample=10 seconds=0.020741
+[client timing] stage=serial phase=measured sample=11 seconds=0.019496
+[client timing] stage=serial phase=measured sample=12 seconds=0.019410
+[client timing] stage=serial phase=measured sample=13 seconds=0.019311
+[client timing] stage=serial phase=measured sample=14 seconds=0.019445
+[client timing] stage=serial phase=measured sample=15 seconds=0.019368
+[client timing] stage=serial phase=measured sample=16 seconds=0.019462
+[client timing] stage=serial phase=measured sample=17 seconds=0.019388
+[client timing] stage=serial phase=measured sample=18 seconds=0.019471
+[client timing] stage=serial phase=measured sample=19 seconds=0.019551
+[client timing] stage=serial phase=measured sample=20 seconds=0.019486
+protocol=OSA-SeededDigest-RSS31-full-online implementation_scope=paper_flow_with_compact_seeded_digest_extension benchmark_profile=compact_seeded rng_mode=deterministic_benchmark rss_field_mode=compact31 rss_modulus=2147483647 rss_bits=31 digest_sharing_mode=seeded_prg_digest security_delta=hkdf_prg_seeded_digest_and_bounded_rss31 aggregate_key_abs_bound=29600 digest_mask_mode=shake256_xof aux_encryption_mode=ind_cpa_shake256 n_clients=1000 active_clients=800 vector_len=10000 committee_size=50 threshold_t=40 rss_secret_dim=30 bench_threads=32 setup_s=0.053303 client_compute_s=0.019534 client_observed_mean_s=0.029258 client_batch_wall_s=1.001564 committee_compute_s=0.037952 committee_route_parse_s=0.000219 committee_aux_decrypt_s=0.035144 committee_payload_decode_s=0.001625 committee_key_accumulation_s=0.000695 committee_serialize_s=0.000056 verifier_compute_s=0.000000 server_compute_s=3.823673 server_interpolation_s=0.000776 server_key_reconstruction_s=0.002567 server_ciphertext_aggregation_s=0.260191 server_digest_share_collection_s=0.016900 server_digest_reconstruction_s=2.479454 server_digest_mask_expansion_s=0.260635 server_mask_accumulation_s=0.002683 server_final_decryption_s=0.020162 online_wall_s=6.373428 client_to_server_bytes=200387200 server_to_committee_bytes=37568960 committee_to_server_bytes=811440 client_bytes_mean=250484.000 committee_receive_bytes_mean=939224.000 committee_send_bytes_mean=20286.000 committee_bytes_mean=959510.000 server_receive_bytes=201198640 server_send_bytes=37568960 total_bytes=238767600 correctness=pass

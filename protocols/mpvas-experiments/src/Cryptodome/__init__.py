@@ -1,0 +1,1 @@
+"""Local compatibility shim for the tiny Cryptodome surface used by mPVAS-UD."""

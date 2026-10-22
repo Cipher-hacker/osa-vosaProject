@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/bin/vosa"
+  ],
+  "cwd": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008",
+  "job": {
+    "protocol": "vosa",
+    "n": 1000,
+    "active": 900,
+    "m": 50,
+    "length": 10000,
+    "repeat": 1
+  },
+  "utc_started": "2026-10-09T11:49:35.407930+00:00",
+  "controlled_env": {
+    "VOSA_N_CLIENTS": "1000",
+    "VOSA_ACTIVE_CLIENTS": "900",
+    "VOSA_VECTOR_LEN": "10000",
+    "VOSA_COMMITTEE_SIZE": "50",
+    "VOSA_THRESHOLD": "40",
+    "VOSA_THREADS": "32"
+  }
+}

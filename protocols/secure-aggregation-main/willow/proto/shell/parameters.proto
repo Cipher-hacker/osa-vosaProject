@@ -1,0 +1,50 @@
+// Copyright 2025 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+package secure_aggregation.willow;
+
+option java_multiple_files = true;
+option java_outer_classname = "ParametersProto";
+
+// This proto defines how to pack an input vector into a KAHE plaintext.
+// An input vector of length `length` is split into `num_packed_coeffs` many
+// sub-vectors of length `dimension` each. Each sub-vector is then packed into a
+// single plaintext coefficient using base `base` encoding to allow summation
+// over all clients' contributions.
+message PackedVectorConfigProto {
+  int64 base = 1;
+  int64 dimension = 2;
+  int64 num_packed_coeffs = 3;
+  int64 length = 4;
+}
+
+// This proto defines the parameters for instantiating the KAHE scheme
+message ShellKaheConfigProto {
+  // The first two fields define the KAHE ciphertext ring Z[X]/(q, X^N+1),
+  // where `log_n` is log2(N) and `moduli` is the list of prime factors of q.
+  int64 log_n = 1;
+  repeated uint64 moduli = 2;
+
+  // log2(t-1) where t is the KAHE plaintext modulus. Note that we set t to be
+  // t = 2^log_t + 1
+  int64 log_t = 3;
+
+  // Number of the public random polynomials for generating KAHE ciphertexts.
+  int64 num_public_polynomials = 4;
+
+  // Configures how input vectors are packed into the KAHE plaintext.
+  map<string, PackedVectorConfigProto> packed_vectors = 5;
+}

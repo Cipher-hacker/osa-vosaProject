@@ -1,0 +1,75 @@
+// Copyright 2025 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+package secure_aggregation.willow;
+
+option java_multiple_files = true;
+option java_outer_classname = "DecryptorProto";
+
+message GenerateKeyRequest {
+  // The key ID to use for the generated key. If the key with the given ID
+  // already exists, it will be returned instead.
+  bytes key_id = 1;
+}
+
+message GenerateKeyResponse {
+  // The serialized bytes of the public key.
+  bytes public_key = 1;
+}
+
+message DecryptRequest {
+  // The serialized bytes of the message to decrypt.
+  bytes decryption_request = 1;
+  // The serialized bytes of the public key as returned by GenerateKey.
+  bytes public_key = 2 [deprecated = true];
+  // The key ID of the public key that was used in the GenerateKey call.
+  bytes key_id = 3;
+}
+
+message DecryptResponse {
+  // The serialized bytes of the message decrypted.
+  bytes decryption_response = 1 [ctype = CORD];
+}
+
+// Error status.
+message Status {
+  int32 code = 1;
+  string message = 2;
+}
+
+// DecryptorRequest and DecryptorResponse combine individual request and
+// response messages above, and are used by the replicated implementation of the
+// Decryptor.
+message DecryptorRequest {
+  oneof msg {
+    // Creates a new key pair for encrypting messages with asymmetric
+    // encryption.
+    GenerateKeyRequest generate_key = 1;
+    // Decrypts a message encrypted with a generated public key.
+    DecryptRequest decrypt = 2;
+  }
+}
+
+message DecryptorResponse {
+  oneof msg {
+    // Response for GenerateKeyRequest.
+    GenerateKeyResponse generate_key = 1;
+    // Response for DecryptRequest.
+    DecryptResponse decrypt = 2;
+    // Error status shared among requests.
+    Status error = 3;
+  }
+}

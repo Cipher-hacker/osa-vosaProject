@@ -1,0 +1,43 @@
+{
+  "version": "dropout-computation-warmed-v1",
+  "revision": 4,
+  "files": {
+    "base_files.json": "d1ca49b7e7dc5461e204749019bb360814730bd3df8ad49a7316ac8a14ab590f",
+    "build.py": "39885720d63473096cb24d2abee308be4af8beb128b5e30c83283216671d857b",
+    "client_timing.rs": "9f7b390c2665b13a3b8e7477ec9720e4b3921406a642acec119d17d7e73363a2",
+    "communication_reference.json": "549ef012a72160db52aa2a78522ddb52b9e49e57958c9deaa7243734ea3d879e",
+    "dependency_locks.py": "f17f95eec03d1b2830f5810cbf5ed87b39896fa92213d7bbd26af347a762aceb",
+    "export.sh": "c47e44fe9a61e7bcd25d0df51b8af0f131f6a0d4f66ddbdce90bff599437e177",
+    "instrument.py": "71efbb8c7cfe6131d66f0386666369c2f7118f3b2bbc6ac9b7667e56945d5af7",
+    "locked_dependencies/opa-secure-aggregation.MODULE.bazel.lock": "14d1a97d99bd0311ab0d557dc94e8d412cdc5f84ba87ee1d97e232cafc52dbc0",
+    "locked_dependencies/secure-aggregation-main.MODULE.bazel.lock": "89a4898ad63fdd76a1fa31cd67cb6e3d50552466b6c6e2f4d65c2aa4522b869b",
+    "plot_results.py": "198b85e553efa7b5933a4ebec4cc242556a4767733bcce127b7eda0991bf1ca4",
+    "plotting/renderer.py": "59f657d4f05e9d20d3ecb3c4354732507be0fcf5a43d3c219e344a17ffdc9586",
+    "prepare.sh": "b1b5ce045de2757b48a4662e61ad1b74f86e977d2afea70b87e6547f91894aec",
+    "README_CN.md": "510e510a34c8cf20a8417082a5bad54797fb45c9204075e835d8bc202431cd35",
+    "resources.py": "726c551991f6afc74a09d8f3e415289675c8e6e094802face847aa8427bb064f",
+    "run.sh": "3efbe52c10002fcfabb65f3389ebc89bb05e9c7ab7cf4da11f6aa65cf6b98c50",
+    "runner.py": "424c0844344b0b270263886d114152f8ed752363d5958d522ac141eb8c64b545",
+    "status.sh": "3076b7af9d643ee303a72792d2e389bcafb39c66872ab6a5dc605818b94e6942",
+    "support/fixtures/opa.log": "43cba50b3a40409ca0c1e50f7208e9a7f043efc52d9b81efc47f9d4f4faefbef",
+    "support/fixtures/osa.log": "9c24294e52a075874d5a1afd21f259423ca98ee870b9b74fbadf74980cd8c4bb",
+    "support/fixtures/tacita.json": "7418e61d09d51e62ef7375f7e0726e928455c513077c2a17ca3eac4a1950d8b0",
+    "support/fixtures/willow.log": "8d619ddc662d60fb573970c1833a841c9f0239e71db1fda9e7410894f7dfd821",
+    "support/suite.py": "23c8c4a617128af26e8e9182bb777a4f10ff9ede3e88e097e60383c132a10d1c",
+    "tacita_worker.py": "3b07b206bfd2034191e31fcde426caeee227f5233a73ca8106e922098c471c91",
+    "tests/test_retest.py": "3c7ceca45a94c3871ec1f89dc858a888786bb43c0f475b9ae29063d73c81df57"
+  },
+  "scope": "48 complete dropout computation runs; 3 same-process warmups + 20 serial client samples each; no FL",
+  "communication_reference_audit_sha256": "20135f4c700ac6a9a49e1349f430803eaabe802c6a6005155435aa446ba7cdd6",
+  "plot_revision": {
+    "id": "mean-only-inset-20261016",
+    "previous_manifest_sha256": "82f6df509a4607118411d40c2fcc5d060cf44ff2452c87c4c6230b8d713d3c16",
+    "protocol_or_timing_changes": false
+  },
+  "packaging": {
+    "id": "final-code-package",
+    "previous_manifest_sha256": "63050f93a764673ab5f9655ec0b5d4c488f9e7b67dc59092f3d0c7a444ce0ffb",
+    "protocol_or_timing_changes": false,
+    "excluded": "non-runtime reports; required READMEs, licenses and test fixtures retained"
+  }
+}

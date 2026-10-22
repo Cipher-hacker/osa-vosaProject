@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/bin/opa"
+  ],
+  "cwd": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008",
+  "job": {
+    "protocol": "opa",
+    "n": 600,
+    "active": 480,
+    "m": 50,
+    "length": 10000,
+    "repeat": 1
+  },
+  "utc_started": "2026-10-08T14:53:03.627162+00:00",
+  "controlled_env": {
+    "BENCH_N_CLIENTS": "600",
+    "BENCH_ACTIVE_CLIENTS": "480",
+    "BENCH_VECTOR_LEN": "10000",
+    "BENCH_COMMITTEE_SIZE": "50",
+    "BENCH_THRESHOLD": "34",
+    "BENCH_THREADS": "32"
+  }
+}

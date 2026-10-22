@@ -1,0 +1,27 @@
+{
+  "args": {
+    "mode": "formal",
+    "threads": 32,
+    "implementation": "fig7-batched-v2",
+    "n_clients": 400,
+    "active_clients": 320,
+    "committee_size": 50,
+    "threshold": 40,
+    "vector_len": 10000,
+    "slots": 1,
+    "repeats": 1,
+    "output_root": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/runs/paper_20261008T120320_083726Z/raw/tacita_N400_A320_M50_L10000_R3/attempt_20261008T144313_351826Z/ste",
+    "kahe_bridge": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/tacita/bin/kahe_stage_fig7_v2",
+    "keep_fixtures": false
+  },
+  "hostname": "autodl-container-74aa40adc6-759fc565",
+  "platform": "Linux-5.15.0-117-generic-x86_64-with-glibc2.35",
+  "cpu_count": 128,
+  "binary_sha256": "f195472b8773693b7cc4a5d3ba570715660aabeab173daf35764ca9a3f924e46",
+  "bridge_sha256": "7dc4f64cf636cbda1452e3d330781176f58f38e66a682e21cc01637b77a6e8b6",
+  "upstream_commit": "c1a82f02a9fa2faeffa6589628c67e6e85a27ce9",
+  "mklhts_enabled": false,
+  "input_soundness": false,
+  "traffic_contract": "canonical compressed cryptographic payload bytes; excludes transport framing, IDs of input clients, and setup distribution",
+  "security_profile": "honest-client research ablation; setup dealer and key hints trusted"
+}

@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/.runtime/mpvas-real/venv/bin/python",
+    "-m",
+    "testrun.bench_ud_vector",
+    "-p",
+    "ud",
+    "-n",
+    "600",
+    "-m",
+    "0",
+    "--dropout-ratio",
+    "0.2",
+    "--suppress-writes"
+  ],
+  "cwd": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/project/source/mpvas-experiments/src",
+  "job": {
+    "protocol": "mpvas",
+    "n": 600,
+    "active": 480,
+    "m": 50,
+    "length": 10000,
+    "repeat": 2
+  },
+  "utc_started": "2026-10-09T10:12:09.950408+00:00",
+  "controlled_env": {
+    "MPVAS_VECTOR_LEN": "10000",
+    "MPVAS_THREADS": "32",
+    "MPVAS_PROGRESS_EVERY": "25"
+  }
+}

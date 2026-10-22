@@ -1,0 +1,2385 @@
+{
+  "schema": 1,
+  "packages": {
+    "paper": {
+      "original_name": "OSA_Paper_Experiments_CPU_20261008",
+      "files": [
+        {
+          "original": "config.json",
+          "source": "config/paper.json",
+          "sha256": "972a6bbfd6d03d975fbe1e43bb71721982b5dfbe00888cbf25e948ea121e6207"
+        },
+        {
+          "original": "package_manifest.json",
+          "source": "manifests/paper.json",
+          "sha256": "7538a890359c40d7cb4a5b611f160ae608e07c2c6debe7f843194b5e916719eb",
+          "original_sha256": "0d1699bf9c9908f034e8437ead83a059f5bd317b9d478b5be11a4179596849a9",
+          "revision": "mean-only-inset-20261016"
+        },
+        {
+          "original": "project/rust_mirror.cfg",
+          "source": "config/rust_mirror.cfg",
+          "sha256": "6270b99889c710e601187c4072121f19b5c3ffb511c3445c3781df61ddddc0ec"
+        },
+        {
+          "original": "project/scripts/build_mpvas_real.sh",
+          "source": "scripts/build/pairing/build_mpvas_real.sh",
+          "sha256": "598ebdad9ffc46eac29d82e563534ea1099b0b409757955e335c0010e9ce6e5a"
+        },
+        {
+          "original": "project/scripts/check_environment.sh",
+          "source": "scripts/build/pairing/check_environment.sh",
+          "sha256": "06645022557b58ec3afed9cbb40cf8d89c8ab50144138e4e547baa60c6bf83af"
+        },
+        {
+          "original": "project/scripts/common.sh",
+          "source": "scripts/build/pairing/common.sh",
+          "sha256": "f76923532385c9bb909d873164a07e783c53dd6dfa99d07703c88a08de1b50ce"
+        },
+        {
+          "original": "project/source/mpvas-experiments/.editorconfig",
+          "source": "protocols/mpvas-experiments/.editorconfig",
+          "sha256": "d81629bbc4e7654afe31cddd698e7b58e8cabdb0bb5cb22e1bb53f1672062f1f"
+        },
+        {
+          "original": "project/source/mpvas-experiments/.gitignore",
+          "source": "protocols/mpvas-experiments/.gitignore",
+          "sha256": "bb8ac5200bec71232e20bf32d51a3c780b01169f608dd80bc0b644bce6388459"
+        },
+        {
+          "original": "project/source/mpvas-experiments/GNUmakefile",
+          "source": "protocols/mpvas-experiments/GNUmakefile",
+          "sha256": "4557f633d91e08197e482d58e6223fae85b73226b3c30b463807e51259eacee9"
+        },
+        {
+          "original": "project/source/mpvas-experiments/pyproject.toml",
+          "source": "protocols/mpvas-experiments/pyproject.toml",
+          "sha256": "031b4c31163e6329227035323296b9f41ee3d4eaae138389052ec8b27d180b60"
+        },
+        {
+          "original": "project/source/mpvas-experiments/README.md",
+          "source": "protocols/mpvas-experiments/README.md",
+          "sha256": "4579dec330fda09842119452c663dc0b5916fd3b34303685fab4f1183b6138e5"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/__init__.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/__init__.py",
+          "sha256": "d2efb386077c81a6462dfaba754d358fc97f86f7ad17176d81f26be904c2d225"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/core/__init__.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/core/__init__.py",
+          "sha256": "ea05df460a90016e659b673df2591250adfbd21666d3f9ec602b4f71bd5f15ee"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/core/math/__init__.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/core/math/__init__.py",
+          "sha256": "6c6bde8cd8fc3b9420052d7f80b817563173b4ff0f1d4cc29342a45ed98f4f38"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/core/math/pairing.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/core/math/pairing.py",
+          "sha256": "3ee9adfb422dd7423d31ec5a6918bc9675e4d2d437760b0aff6c6f10dfdc0a3e"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/toolbox/__init__.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/toolbox/__init__.py",
+          "sha256": "d4150324ed77d0d5cce1c10dd563f5f65ae61f088fa387e24403279bbcb527ad"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/toolbox/hash_module.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/toolbox/hash_module.py",
+          "sha256": "7d35a7fc3b14485bfd75732c5af7d22efe2888e0590cd359dba4ecc8f590c3fe"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/charm_compat_backup/toolbox/pairinggroup.py",
+          "source": "protocols/mpvas-experiments/src/charm_compat_backup/toolbox/pairinggroup.py",
+          "sha256": "94ba0425fc597a8afd603d855f4b5f25e42ff6afe0f2561283da91abe952ffe5"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/Cryptodome/__init__.py",
+          "source": "protocols/mpvas-experiments/src/Cryptodome/__init__.py",
+          "sha256": "61d4f6b75e5065f1233194d8038d45c463d2f74ac3de9de4f758b90d979e2097"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/Cryptodome/PublicKey/__init__.py",
+          "source": "protocols/mpvas-experiments/src/Cryptodome/PublicKey/__init__.py",
+          "sha256": "a9528719df26900a2bc209fa717f3794213410dd1bbda011d0dc424610ffcdb1"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/Cryptodome/PublicKey/ECC.py",
+          "source": "protocols/mpvas-experiments/src/Cryptodome/PublicKey/ECC.py",
+          "sha256": "f4ad74cfdde904cf9db0362e247d824bb395d5ab5c5b290df9ab04aff8f798df"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/__init__.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/__init__.py",
+          "sha256": "6574c86458db2b56d213b076bfa2814d4ad7b025bee85ae9c015db67534304e9"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/csv.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/csv.py",
+          "sha256": "da8874e8aa413ddf2e636a7c2e4d36e564722b2b48b02a3c0e7f0ec1aa96ff41"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/element.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/element.py",
+          "sha256": "03e080bfb3db753eafa8adc9bd02e1a063f67ec636d85b316c1a0d7d057c8705"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/enums.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/enums.py",
+          "sha256": "cdd336a688d5ec6ae92a2f01621d881450cb824404c575a7d9e7493b9ead59a9"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/logger.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/logger.py",
+          "sha256": "13a49a440f608fd4f89431dadd08e905057849b2614e9854a4ca18b78a84770b"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/message.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/message.py",
+          "sha256": "437930bd63480e2f69cd16774d5eabf33f0a881779143700cdf6abcf4ca9239c"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/parse_args.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/parse_args.py",
+          "sha256": "da687d6d3c445e7cb1c3385517c048c070338f4274151dccee57eff18565e96d"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/protocol.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/protocol.py",
+          "sha256": "c10b2d720cef34bef57b58d598fb40a40becf7cdfb1ef7f2ce1a2a65406b5585"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/public_params.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/public_params.py",
+          "sha256": "65cd5c77557051f86da80bbe7c7bcd68df023e16246bbfec94a2e50c86de0909"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/shamir.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/shamir.py",
+          "sha256": "10dc8c1ef766c6e8d41a1246ef7a8e23f7886ca0f3e8de9bda800695c91ce74d"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/simple_random.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/simple_random.py",
+          "sha256": "6d0bb160fe4f4030839f758bdee40c08200e1beef93e1721b3c2adace786203c"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/state.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/state.py",
+          "sha256": "8e3e0bb34a0635a79bbde3c897c84e712020e58e9a37508d9f7fddf6d4da6ca1"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/timer.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/timer.py",
+          "sha256": "c071726c1eaf5a18ec07bf5c465e1cdd323f79e158b16c5f27ed529ee42f7cb4"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/common/utils.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/common/utils.py",
+          "sha256": "124f870824abec66437c1f626923b605c745a11fa022db819f825f05420ae202"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/iv/protocol.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/iv/protocol.py",
+          "sha256": "ce0594f0a92cd25f8b4fc431f94086d6a1c7ef56712d550bf057032cc7c5bb15"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/iv/zkp.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/iv/zkp.py",
+          "sha256": "b8b325401969443820456b829c0402864c630d4381b2cc2010b9cc841bd7b63d"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/plain/protocol.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/plain/protocol.py",
+          "sha256": "d321b3207c58e78fa5791263782a33c29c9f04bd2ab98c3924ba744b999d9a8b"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/plus/prob.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/plus/prob.py",
+          "sha256": "7e18addd63886e18d58f5e85c100c13898cd431ee31da2ea48fff424850f0dbc"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/plus/protocol.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/plus/protocol.py",
+          "sha256": "6e9afad45030eb4a46de2fc2fbaa9c529d91980323a6a2bb8f3b5fb7fa9a90f4"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/mpvas/ud/protocol.py",
+          "source": "protocols/mpvas-experiments/src/mpvas/ud/protocol.py",
+          "sha256": "fa9aaf72adc00a8ed59dcef159be0011608e726a8aabb2328270bbd31e9839bd"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/__init__.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/__init__.pyi",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/core/__init__.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/core/__init__.pyi",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/core/math/__init__.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/core/math/__init__.pyi",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/core/math/pairing.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/core/math/pairing.pyi",
+          "sha256": "68021987730099ecfe10a00efee3258d4788cffec94b3794a75e238308af1e90"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/toolbox/__init__.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/toolbox/__init__.pyi",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/toolbox/hash_module.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/toolbox/hash_module.pyi",
+          "sha256": "caf95e76f4a0ea32541235dacbc8ce335e7adc5482f25acb35ae98616401977b"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/stubs/charm/toolbox/pairinggroup.pyi",
+          "source": "protocols/mpvas-experiments/src/stubs/charm/toolbox/pairinggroup.pyi",
+          "sha256": "7365cf0bd03ac93a5dd11f231bf0dc88ff772adb83866e23abc66d5a2d92f960"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/testrun/bench_ud.py",
+          "source": "protocols/mpvas-experiments/src/testrun/bench_ud.py",
+          "sha256": "d93339bd3199a1f5fb12802f10f06c10492ae9ae2b0604571de60ac4990a39a7"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/testrun/bench_ud_vector.py",
+          "source": "protocols/mpvas-experiments/src/testrun/bench_ud_vector.py",
+          "sha256": "7497978e4a60ec81e4cea9b19fc0d36386a1a1901148170f55869e26509a8f1b"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/testrun/main.py",
+          "source": "protocols/mpvas-experiments/src/testrun/main.py",
+          "sha256": "e1a883f488e6df9e2260913b0b621e608b7625a58b2d797f08fcd63f49c67e0d"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/testrun/plot.py",
+          "source": "protocols/mpvas-experiments/src/testrun/plot.py",
+          "sha256": "9db652aa9fca4ce79ff6442bad2c7ac5fa1297bbbdccc7db750694a650f6ba3a"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/testrun/run.sh",
+          "source": "protocols/mpvas-experiments/src/testrun/run.sh",
+          "sha256": "cc492715f8ab5d1d2b3af3fd156d64d1f06930f0736d265a17e1b510541ba512"
+        },
+        {
+          "original": "project/source/mpvas-experiments/src/testrun/test.sh",
+          "source": "protocols/mpvas-experiments/src/testrun/test.sh",
+          "sha256": "b56cc07fc36c715e0ba4a73a692c0275f9965b3da40b356a6f0934fe5b86fb6d"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/.bazelrc",
+          "source": "protocols/opa-secure-aggregation/.bazelrc",
+          "sha256": "cc4c734a92b726b6965c1c96f97bfe98b1856fbb5d537af4040aad4bc0452eec"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/.bazelversion",
+          "source": "protocols/opa-secure-aggregation/.bazelversion",
+          "sha256": "7aeae32cd8e4dd6a657fc2c67b296252886e373524a63fa23b5c3b499a61f112"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/BUILD",
+          "source": "protocols/opa-secure-aggregation/BUILD",
+          "sha256": "4033ec1c5d488f4d52dc1b38bb27dbb16f4e0ec6476421e2b91ce0872b56b603"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/cargo_config.toml",
+          "source": "protocols/opa-secure-aggregation/cargo_config.toml",
+          "sha256": "db2cfd418e5a128ac99e190a2058c7680df0137f91ed51b059acb1337a1b47d1"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/BUILD",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/BUILD",
+          "sha256": "a74fe40c3065080dfc48a43c6c4cbaf87c1462aa2bc645a0af394320fa77dfc4"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/cxx_utils.h",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/cxx_utils.h",
+          "sha256": "506ea6e3f13eeb47ebfb51aae02888a2062828277245bced39363b0c5c1e4b60"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status.cc",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status.cc",
+          "sha256": "23cc72aa4a9eda1f3e984352c1ea1e403c0e303b255ea0ddfbc041fb25e77a3c"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status.h",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status.h",
+          "sha256": "afe8d4d3ebdbff243e3d025b70d46385d738b5e76f40d6439fa7e614d0d866dd"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status.rs",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status.rs",
+          "sha256": "f8d1dca59b192e554708119357d2dc9f0f791126bdabd940a9b2a119f04a7f15"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status_macros.h",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status_macros.h",
+          "sha256": "5d9030c88e7901becdf529cdbfe0c28fa1152fe3a7d1f9ad6f24028bdc9016d9"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status_matchers.cc",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status_matchers.cc",
+          "sha256": "788f9ff26ffa30a328d1bfe78194dc78565f7213cfaf451e952caf59b75d59ef"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status_matchers.h",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status_matchers.h",
+          "sha256": "3092c6d5924eaa42dac19ca1e57e713ad3600f5b1cee210177b0c1c934988525"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/ffi_utils/status_matchers.rs",
+          "source": "protocols/opa-secure-aggregation/ffi_utils/status_matchers.rs",
+          "sha256": "a629b85a17377b5423bc5f91bdc085c43c1f585979122818519ebc7a2780154e"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/LICENSE",
+          "source": "protocols/opa-secure-aggregation/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/MODULE.bazel",
+          "source": "protocols/opa-secure-aggregation/MODULE.bazel",
+          "sha256": "0cd5683cd55ecb3307f55170b8ad7a1203dc6c25550b82c75a1e712bad73f49e"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/MODULE.bazel.lock",
+          "source": "protocols/opa-secure-aggregation/MODULE.bazel.lock",
+          "sha256": "14d1a97d99bd0311ab0d557dc94e8d412cdc5f84ba87ee1d97e232cafc52dbc0"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/bench_opalwr.rs",
+          "source": "protocols/opa-secure-aggregation/opa/bench_opalwr.rs",
+          "sha256": "419d1b8b1316a6d37904adfc0db50f84be20989c6a9d9a1bb477fb3b34229cac"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/bench_opalwr_common.rs",
+          "source": "protocols/opa-secure-aggregation/opa/bench_opalwr_common.rs",
+          "sha256": "c48734854195c9d03379dd2574c86d7d6099fe2bf990628c3d57dc7c98f6e0db"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/bench_opalwr_optimized.rs",
+          "source": "protocols/opa-secure-aggregation/opa/bench_opalwr_optimized.rs",
+          "sha256": "488a52d988c77d8217836f3a7e5270b2fe526d567adc1ce3deecba1f977bcf19"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/BUILD",
+          "source": "protocols/opa-secure-aggregation/opa/BUILD",
+          "sha256": "98ebd753c5328dafe365c46c682d3abd573fc7e622b71a13fb4ab5f19b6a6864"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr.rs",
+          "sha256": "50cc6b700a32932efe74868cfe466a76ea35ed5339859e62157a469dc76c6b56"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr_field_shamir_backup.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr_field_shamir_backup.rs",
+          "sha256": "19cd5e011cca35c8ea06253e3f79d864ecb30ed03bb8dfa07375f6950cec3922"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr_fl_params_test.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr_fl_params_test.rs",
+          "sha256": "498c82202f032394edc5153c52750b7177543fb2280267b0d818482b93b3b210"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr_integer_liss_backup.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr_integer_liss_backup.rs",
+          "sha256": "77473ffc73ef939b67a4e96d9c0e86f0249f693cebe802d09ee4a9812f98e380"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr_optimized.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr_optimized.rs",
+          "sha256": "f548ebc6b68e415c3c86b485536fe48c39e006020c70086fcc32030d83240503"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr_optimized_test.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr_optimized_test.rs",
+          "sha256": "3db1bbd6663e27f6a1177b5f2a31f32e25df098446d43352b23d2e12b275e378"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/opalwr_paper_params_test.rs",
+          "source": "protocols/opa-secure-aggregation/opa/opalwr_paper_params_test.rs",
+          "sha256": "5b97700d978dec284cf6dacdf455fd672ca5967cf38f7de14817edeae9f3d7bd"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/README.md",
+          "source": "protocols/opa-secure-aggregation/opa/README.md",
+          "sha256": "fef4ce68254859416a131dbc5742ae80a098e4cb0b73e61209cc5e121ce0faf9"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/opa/real_fl_bridge_optimized.rs",
+          "source": "protocols/opa-secure-aggregation/opa/real_fl_bridge_optimized.rs",
+          "sha256": "9c057a3ae118732d4f981bf0a68a732b8e47f69f87819dd13cc2fbabbe44239f"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/README.md",
+          "source": "protocols/opa-secure-aggregation/README.md",
+          "sha256": "6bf7d36f5b59ba935491d6e7c4e58246ee4fbc496651767e20784f496eda85f9"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/ahe.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/ahe.cc",
+          "sha256": "0ab93d1ac1aced29827c385c9a1c32c2e283abaa078d5ad27874af311a7418fe"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/ahe.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/ahe.h",
+          "sha256": "05ae16e079f6889826e9ddcdeafa426b0e622271d9745c63678d2fa8ce760b18"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/ahe.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/ahe.rs",
+          "sha256": "1985488567905253c1e39b13ab97f20bd368f8c4deb967f2295508e536849737"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/ahe_aliases.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/ahe_aliases.h",
+          "sha256": "37b0821b4f5c84ab489305f5b7c0206e2f729769790c3c7de509a20144ce7ad5"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/ahe_test.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/ahe_test.cc",
+          "sha256": "943709e29b5bd07cbca45f23bbd482b9cc38ee98e0d44b9b323e3aa5968df3f1"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/ahe_test.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/ahe_test.rs",
+          "sha256": "3e9ebb882ecdcbc43cdad50a0e5c71460f800399968c76fbed7c08cd298bff68"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/BUILD",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/BUILD",
+          "sha256": "0f2d60bf23293ea4efcd10848c755e58893b0c7f9fd6c57db7e6060d31022fd0"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/kahe.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/kahe.cc",
+          "sha256": "6e28cf3c4a0f2f7c089d8870baedc9dc559344358d19f572cb2ebe029db0e5f2"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/kahe.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/kahe.h",
+          "sha256": "f6610780580b4ee32e3c6653b79f29041225e56a66bf1e3e0e4f3920a023370d"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/kahe.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/kahe.rs",
+          "sha256": "2d6340a5589f00c4e69b2ed00bbe2fea780363af3dde028881e9fe9b0bc2b697"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/kahe_test.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/kahe_test.cc",
+          "sha256": "64d38849a2d63c9410f35e564a296a85f880cfad7e43254e752368ce86629623"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/kahe_test.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/kahe_test.rs",
+          "sha256": "13a3b0c6938069d2b4f4ed2651260591e2903c6f63845b5307e7c31093c09f3b"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_aliases.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_aliases.h",
+          "sha256": "cd058624e4541d4c3a04bf900c8a011968c5e69bee0d92bb45ea7909c98e442b"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_serialization.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_serialization.cc",
+          "sha256": "ddab0e26930faee78b22ca8a3c4c3d05dbde86609cf52768e144fee717f92bb4"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_serialization.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_serialization.h",
+          "sha256": "4d1da8b2a7be712c1e08c9a0fbfec713344c5e30b0753235133bd40ad6736357"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_serialization.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_serialization.rs",
+          "sha256": "72f9b955367480e8b3028fbdf1d53b3d93f6028f41b17241b76862107903b8b6"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_serialization_test.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_serialization_test.cc",
+          "sha256": "4481b3f9b2d887dd3ccce9c3c77de55b5980a889b68c75fa897c54f4a4902f15"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_types.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_types.cc",
+          "sha256": "0da2e7c18f651e645ab5d5b4a5e605385d51a779d6fb7673132146a6ed52c1c7"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_types.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_types.h",
+          "sha256": "9d733de4256bc7b27fdcf54ff8dbf6861edc19a14ca5cb6f974e48150c9cf235"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_types.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_types.rs",
+          "sha256": "ee34a77942d77a185c205c80a0e13c74003d92b86ff89443d01a6fa92c084b5a"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/shell_types_test.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/shell_types_test.cc",
+          "sha256": "ec62bdc61eaee72e05ce0cc71dfe62bf4c5a023c7840848c6757466a7fa90483"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/single_thread_hkdf.cc",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/single_thread_hkdf.cc",
+          "sha256": "31cb91d4cfe42ebba4f6904bad74eb53d4c403b11495c68b5b93b0d04b3105ac"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/single_thread_hkdf.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/single_thread_hkdf.h",
+          "sha256": "7c6c48b7bd84278ded26724d4d4602086a1300c4f1fcec0a9a8e8701654001d2"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/single_thread_hkdf.rs",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/single_thread_hkdf.rs",
+          "sha256": "d069f2f839751413958a93ce65087323d14cab2b28e18bf443b0280770d7f399"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/shell_wrapper/testing_utils.h",
+          "source": "protocols/opa-secure-aggregation/shell_wrapper/testing_utils.h",
+          "sha256": "d373ef52a5d62b74648ae33d644241b93dd2ab53bd29b9a0ab364cb50f8514ec"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/aggregation_config.rs",
+          "source": "protocols/opa-secure-aggregation/willow/api/aggregation_config.rs",
+          "sha256": "fde50b39d1675fbf42e25c2514e632a137127244e89c65b05a2ae13782fcaf6e"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/api/BUILD",
+          "sha256": "f0b40d600048375db51c3993c58d1cad5a256b77afd4b182cd33172f312cfff0"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/client.cc",
+          "source": "protocols/opa-secure-aggregation/willow/api/client.cc",
+          "sha256": "2d3c9a2be9ed0112a6f50836d04dc00d98f2ec5f6e63bc212340ffb2a2727711"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/client.h",
+          "source": "protocols/opa-secure-aggregation/willow/api/client.h",
+          "sha256": "dcf788bdc515bdaf7edd080f75ab5e713ce5c1548fe882e77b43ad8699da9a8d"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/client.rs",
+          "source": "protocols/opa-secure-aggregation/willow/api/client.rs",
+          "sha256": "5f573c0e3dc589f495dba106388c37958998f48981311312d2afd1dc63121060"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/client_test.cc",
+          "source": "protocols/opa-secure-aggregation/willow/api/client_test.cc",
+          "sha256": "29de3a2d18adc664efc8384fbd0c8123f69da667777c0be718b5357fd691f447"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/proto_serialization.rs",
+          "source": "protocols/opa-secure-aggregation/willow/api/proto_serialization.rs",
+          "sha256": "aa323938fd0ee5ceb85b537b16745f9f2c362dfece3add8528484e949d9c1ddc"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/server_accumulator.cc",
+          "source": "protocols/opa-secure-aggregation/willow/api/server_accumulator.cc",
+          "sha256": "ae7d3b3c0d467a6445131c5d81aee5ad3aab626f367c806bc35c692dcf421ce9"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/server_accumulator.h",
+          "source": "protocols/opa-secure-aggregation/willow/api/server_accumulator.h",
+          "sha256": "38ea032f093d6e41962321276e7f8af27997f83699549a13e76135809ad58585"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/server_accumulator.rs",
+          "source": "protocols/opa-secure-aggregation/willow/api/server_accumulator.rs",
+          "sha256": "d4a57612dc1c30106ae8d3f63cdeaffa227caa7f2ed6100585117f7e3fd6cb06"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/api/server_accumulator_test.cc",
+          "source": "protocols/opa-secure-aggregation/willow/api/server_accumulator_test.cc",
+          "sha256": "1865b7975d10e973487f254d4d3b40a57198b3574f9cc8652c126ecd4e076030"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/benches/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/benches/BUILD",
+          "sha256": "5ab0156acf62051c6f08f44f87f8a394562a0dcd535e5f2fb24c1bfe3f927e94"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/benches/README.md",
+          "source": "protocols/opa-secure-aggregation/willow/benches/README.md",
+          "sha256": "6c86f999849cba677325a5cc6523cbc17c12a96e7585aa54b646a3609d7d54b4"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/benches/run_shell_benchmark.rs",
+          "source": "protocols/opa-secure-aggregation/willow/benches/run_shell_benchmark.rs",
+          "sha256": "790c454cebc7d614de562531423eedeac11af09e27f85d31ee26a635334025ca"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/benches/shell_benchmarks.rs",
+          "source": "protocols/opa-secure-aggregation/willow/benches/shell_benchmarks.rs",
+          "sha256": "8bf1a8ed8a61750e6401ea41a4991405a3c4f09c929702f94d4b97b8b23c754c"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/ahe_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/ahe_traits.rs",
+          "sha256": "9e6cf2b22ba593b943f1573aa481a4865449bcdd18949487f816c0b30647b178"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/BUILD",
+          "sha256": "1b2edefebe4692a4da541fdfb3bc2c2fb89159545419e87d78ec6bb87450f7e5"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/kahe_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/kahe_traits.rs",
+          "sha256": "b98325e5ba9136eaa9cfd3e9d4ffa5df8addcab547bbae8b8ba6efa8f4d0c6c0"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/linear_ip_serialization.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/linear_ip_serialization.rs",
+          "sha256": "1dc6690b979b2ee32aab40b342c2a3136b8eb2c2af32886b74b09c59a172e5c1"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/parameters_utils.cc",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/parameters_utils.cc",
+          "sha256": "a7a6eb1e52352574eeb9af70ad79149c0a6e46069804bbed4555f5d77423968b"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/parameters_utils.h",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/parameters_utils.h",
+          "sha256": "c32632893b7503137a955fd12a7e29a29cc5402ef0dcc7fcadfa055c86f489fa"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/parameters_utils_test.cc",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/parameters_utils_test.cc",
+          "sha256": "47f0c7aa3e0ecc77d518276dd1ae908bea44415954703ed6d296da046bcda862"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/prng_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/prng_traits.rs",
+          "sha256": "16f9c93d76477c15e47198a6c2650932e516d7c9922f55e7fda9fb4240f6c2d8"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/rlwe_relation_serialization.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/rlwe_relation_serialization.rs",
+          "sha256": "50ddd416e8e496821f25f680e833c900314ef863aa8647c66bebd0d28c41b199"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/shell_ahe.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/shell_ahe.rs",
+          "sha256": "4c7ee299f630679929f944e8932eb0036c3b0cbfce1130b03f095d87ba893b02"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/shell_kahe.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/shell_kahe.rs",
+          "sha256": "03d07a62ccbcf23fa5b24f9a04570b78f7cecf2704cc3b920da6082763ed146e"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/shell_parameters.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/shell_parameters.rs",
+          "sha256": "b9a952d390464c8e23d0039aa76cc6f42f028cd63b12e09e9a91340f5e786a26"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/shell_parameters_generation.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/shell_parameters_generation.rs",
+          "sha256": "d196f54b8a240c6370c95e49122e31bbc1c9484524825a992f8b374182a4a08c"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/shell_parameters_utils.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/shell_parameters_utils.rs",
+          "sha256": "c10c2f7118d892996eff7cfdbd6d0fbb49f0ba13550f6b214a76b08e25e7bcf2"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/shell_vahe.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/shell_vahe.rs",
+          "sha256": "33ccbe45debae89423c5a8b831c474d08840cc1f6a5a7c7dd7c2aa19962b64a5"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/single_thread_hkdf.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/single_thread_hkdf.rs",
+          "sha256": "54b2f8897b4b5f32258a65c8e36093ef8dba85e23ba37bba5c29f0482cc3d7ab"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/vahe_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/vahe_traits.rs",
+          "sha256": "df0a58feb16a04157ec47de7e09470d218264a85ab198f6d3539f76ae0b6d4df"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/zk_linear_ip.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/zk_linear_ip.rs",
+          "sha256": "d20e15313bcc10a9e1717b8ea3069178591979af8f2fc6f890f3c2303ef790ec"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/zk_rlwe_relation.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/zk_rlwe_relation.rs",
+          "sha256": "21dfa8b98065afd76be5049ad8b75e857d3043d74d246636c62583f4705de90c"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/crypto/zk_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/crypto/zk_traits.rs",
+          "sha256": "bc3d3ed8e10f620eb4fc1f21b3afd70ef57dd7e193faa34889ae5a576f8ab961"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/BUILD",
+          "sha256": "afbf219566f42068bcdd50f1710290e7654b9131863114eb73cb2b67b20ba0c3"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/codec.h",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/codec.h",
+          "sha256": "46ed701cec1ae37890b70ca6441d15e3c1805beb184dcc6eaff00ae743bd8570"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/codec_bindings.cc",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/codec_bindings.cc",
+          "sha256": "f0bf4f2e419d19a0ab32a97b29cb66fac0e75496d1c1a5883dc941e4766aad57"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/codec_bindings_test.py",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/codec_bindings_test.py",
+          "sha256": "d6a365adac3f6c25a9327a147b91b43f1fce5ce5b6b0eabaf8a2a6aa976f15c9"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/codec_factory.cc",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/codec_factory.cc",
+          "sha256": "855df8027493cbe590ebfec4b66271d358dbed7560f58a5200c85d12288acedf"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/codec_factory.h",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/codec_factory.h",
+          "sha256": "2dad62077ecb47aaed3fd526fb4ebd09376610619c01e25c1030b80410db5b70"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/input_encoding/explicit_codec_test.cc",
+          "source": "protocols/opa-secure-aggregation/willow/input_encoding/explicit_codec_test.cc",
+          "sha256": "749dc14de05fe04c4f702fe8e22d6f17bc51ac11583cbf24eb554a1628dbd895"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/shell/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/proto/shell/BUILD",
+          "sha256": "94afc6c08f562141abcd678c0bb9db50d0cf08e8adf856d6e8dd559dfec50fe3"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/shell/ciphertexts.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/shell/ciphertexts.proto",
+          "sha256": "8403705c6d4f3d103b74f81a92ab2101112c78e81be1038eb76ffd07af0dda9f"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/shell/parameters.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/shell/parameters.proto",
+          "sha256": "59d70f94808c893a9b5382426673a8a4ae7f0f4e03360bd2cd0220d28bc449aa"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/aggregation_config.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/aggregation_config.proto",
+          "sha256": "2fac414a8cac83b6dadf63c4a1803ce0dcac8ccbdaf3e545d1b8a4a413dd67ba"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/BUILD",
+          "sha256": "2158db06b84301f886797f666238fbc35490731bc84c9274bd4f4971ac8b35cd"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/committee_selector.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/committee_selector.proto",
+          "sha256": "4286de47e0bc26a1ba89e309c40a6c735fefaa329e912eb4c6f5362ab34fb0fb"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/decryptor.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/decryptor.proto",
+          "sha256": "250161f33bc78aa88ba4acd4852bdedb3954ca7c123ff651879cf300baa8e1ca"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/input_spec.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/input_spec.proto",
+          "sha256": "c8a621af6d40e25346b73829490028a442475e30435aeb2a0eda608baf2919be"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/key.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/key.proto",
+          "sha256": "6923ac5618a7748a31f016ca563309df7961fd2ca57d40ac42e25ab70ad3f4d5"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/messages.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/messages.proto",
+          "sha256": "e6d0da0b464bcc16b7b78677f029d6cbb26a17a6a1fe428246544686d46c6c9e"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/willow/server_accumulator.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/willow/server_accumulator.proto",
+          "sha256": "6a214b5842dc5a0ea267a475c283076c062fb1b1f85540ff97661cc23ef59862"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/zk/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/proto/zk/BUILD",
+          "sha256": "af4411671d6f5d0907bd659076ce849955da85a774cfbff21e13a3ab7e724077"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/proto/zk/proofs.proto",
+          "source": "protocols/opa-secure-aggregation/willow/proto/zk/proofs.proto",
+          "sha256": "6c3460c2af29d9426440346dee426219243e6d620fb224dfbbd87500bf804bd0"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/BUILD",
+          "sha256": "bdca47e4c85947a7b6cfb65220432d1719739b06a0cc93f6ddaa08e21033f775"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/client_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/client_traits.rs",
+          "sha256": "242619a897c4a28afd09da97fc61e8ebbef3f37dd6968e89fab9a53b1e73a8ab"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/decryptor_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/decryptor_traits.rs",
+          "sha256": "1ba3646a4b6039fc3f8b107b073f1e6d124ea16aede2d70d43286489cfae9b9e"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/messages.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/messages.rs",
+          "sha256": "43b6979c077b22ee18afd928017f7e1fc9f172ebe371703cbfe200048ca9c35b"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/server_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/server_traits.rs",
+          "sha256": "81888d4a8b9e19db496fc450ca0f1f158998ee6619cc8d5853367e7bb1f67b8a"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/verifier_traits.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/verifier_traits.rs",
+          "sha256": "919a26f4176d4bcd41a22fe585cc31070ae2b14390aaf6e25205e83832307171"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/willow_v1_client.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/willow_v1_client.rs",
+          "sha256": "d7deea0bfe7553407032e98129e8324ca0a6a0c553b30f2d17c69ac2d9e931dc"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/willow_v1_decryptor.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/willow_v1_decryptor.rs",
+          "sha256": "8ce5981db20dac2cf05d186b7e0c9d03eadbad46b6aae6733533f033a814f97d"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/willow_v1_server.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/willow_v1_server.rs",
+          "sha256": "ea01b5bd799ecce5f46da8db8c9cd616d30237f3cb0f2ddf5962c3ff24e35bc5"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/protocol/willow_v1_verifier.rs",
+          "source": "protocols/opa-secure-aggregation/willow/protocol/willow_v1_verifier.rs",
+          "sha256": "8c02be5a79501cccd093ce603d78a4f50c241e3c4898191d93eeae92689d0347"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/BUILD",
+          "sha256": "4ba9d7ae6661bc72be5a6270978e0bca40bd90713bfd3b13a2dc9411a418931d"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/fake_prng.rs",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/fake_prng.rs",
+          "sha256": "9e81eb25de5da89d6d336324dd5af092a22692888bf1319fba3a0e159fe28427"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor.cc",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor.cc",
+          "sha256": "63ca05520192045b26f39589d138330ef2357e47e118bbdbfcf9a377b2542ea9"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor.h",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor.h",
+          "sha256": "962101d1cc283678ea921f706c1345a38d5d651384bd2252b37b2d8d07671f32"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor.rs",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor.rs",
+          "sha256": "9ce48f1854d9787dbfbf8ceba8ed5e26cf3ada8f800568780cfa4688950568ae"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor_test.cc",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/shell_testing_decryptor_test.cc",
+          "sha256": "ea34cd55a8417aa059a5ff91564d1f2acc3cbc70549834fead41b856e3b72ce6"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/shell_testing_parameters.rs",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/shell_testing_parameters.rs",
+          "sha256": "f8e998e3f1ec5e500f9e325db6c9123e8aa081343f894398ac2570be0ee64a28"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/testing_utils.cc",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/testing_utils.cc",
+          "sha256": "19c2620d722ebda89ff65e52656d8687423421173c3a9fc56f0da29bd0e42e04"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/testing_utils.h",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/testing_utils.h",
+          "sha256": "92bce544244b3e2015066b6ff015b48333e371b526fd36e6da72b5fe121ff5e5"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/testing_utils/testing_utils.rs",
+          "source": "protocols/opa-secure-aggregation/willow/testing_utils/testing_utils.rs",
+          "sha256": "dac2023d8aeb45cbca57dfb1ed3af80c87c1bdca40eef511bf0463d3abd1fe13"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/tests/BUILD",
+          "source": "protocols/opa-secure-aggregation/willow/tests/BUILD",
+          "sha256": "ede1931e261d5a478019e7f3ff27d3299f26e29c3b50925e8c59e3d00673cb37"
+        },
+        {
+          "original": "project/source/opa-secure-aggregation/willow/tests/willow_v1_shell.rs",
+          "source": "protocols/opa-secure-aggregation/willow/tests/willow_v1_shell.rs",
+          "sha256": "7125a3c7b772a70091433cf4c03e7586b4176110525254e68023769a9ea13d54"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/.bazelrc",
+          "source": "protocols/secure-aggregation-main/.bazelrc",
+          "sha256": "cc4c734a92b726b6965c1c96f97bfe98b1856fbb5d537af4040aad4bc0452eec"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/.bazelversion",
+          "source": "protocols/secure-aggregation-main/.bazelversion",
+          "sha256": "7aeae32cd8e4dd6a657fc2c67b296252886e373524a63fa23b5c3b499a61f112"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/BUILD",
+          "source": "protocols/secure-aggregation-main/BUILD",
+          "sha256": "cda1790dbd6fb137b5571967cdf4370558044e0039ed0ac07999965678cd937a"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/cargo_config.toml",
+          "source": "protocols/secure-aggregation-main/cargo_config.toml",
+          "sha256": "db2cfd418e5a128ac99e190a2058c7680df0137f91ed51b059acb1337a1b47d1"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/BUILD",
+          "source": "protocols/secure-aggregation-main/ffi_utils/BUILD",
+          "sha256": "a74fe40c3065080dfc48a43c6c4cbaf87c1462aa2bc645a0af394320fa77dfc4"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/cxx_utils.h",
+          "source": "protocols/secure-aggregation-main/ffi_utils/cxx_utils.h",
+          "sha256": "506ea6e3f13eeb47ebfb51aae02888a2062828277245bced39363b0c5c1e4b60"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status.cc",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status.cc",
+          "sha256": "23cc72aa4a9eda1f3e984352c1ea1e403c0e303b255ea0ddfbc041fb25e77a3c"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status.h",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status.h",
+          "sha256": "afe8d4d3ebdbff243e3d025b70d46385d738b5e76f40d6439fa7e614d0d866dd"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status.rs",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status.rs",
+          "sha256": "f8d1dca59b192e554708119357d2dc9f0f791126bdabd940a9b2a119f04a7f15"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status_macros.h",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status_macros.h",
+          "sha256": "5d9030c88e7901becdf529cdbfe0c28fa1152fe3a7d1f9ad6f24028bdc9016d9"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status_matchers.cc",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status_matchers.cc",
+          "sha256": "788f9ff26ffa30a328d1bfe78194dc78565f7213cfaf451e952caf59b75d59ef"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status_matchers.h",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status_matchers.h",
+          "sha256": "3092c6d5924eaa42dac19ca1e57e713ad3600f5b1cee210177b0c1c934988525"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/ffi_utils/status_matchers.rs",
+          "source": "protocols/secure-aggregation-main/ffi_utils/status_matchers.rs",
+          "sha256": "a629b85a17377b5423bc5f91bdc085c43c1f585979122818519ebc7a2780154e"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/LICENSE",
+          "source": "protocols/secure-aggregation-main/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/MODULE.bazel",
+          "source": "protocols/secure-aggregation-main/MODULE.bazel",
+          "sha256": "73e9c43f752a97f1853ce453d6903442476d10e5bed6df95e9d37a2133d3d35f"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/MODULE.bazel.lock",
+          "source": "protocols/secure-aggregation-main/MODULE.bazel.lock",
+          "sha256": "89a4898ad63fdd76a1fa31cd67cb6e3d50552466b6c6e2f4d65c2aa4522b869b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/README.md",
+          "source": "protocols/secure-aggregation-main/README.md",
+          "sha256": "33c53e54be42d72039c36b848d08f70086562befff7d64d5a489ef2c679d1a7c"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/ahe.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/ahe.cc",
+          "sha256": "0ab93d1ac1aced29827c385c9a1c32c2e283abaa078d5ad27874af311a7418fe"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/ahe.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/ahe.h",
+          "sha256": "05ae16e079f6889826e9ddcdeafa426b0e622271d9745c63678d2fa8ce760b18"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/ahe.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/ahe.rs",
+          "sha256": "1985488567905253c1e39b13ab97f20bd368f8c4deb967f2295508e536849737"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/ahe_aliases.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/ahe_aliases.h",
+          "sha256": "37b0821b4f5c84ab489305f5b7c0206e2f729769790c3c7de509a20144ce7ad5"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/ahe_test.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/ahe_test.cc",
+          "sha256": "943709e29b5bd07cbca45f23bbd482b9cc38ee98e0d44b9b323e3aa5968df3f1"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/ahe_test.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/ahe_test.rs",
+          "sha256": "3e9ebb882ecdcbc43cdad50a0e5c71460f800399968c76fbed7c08cd298bff68"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/BUILD",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/BUILD",
+          "sha256": "0f840cf4d5775ddd6d430c94ec70d4a265aed69bafd338a4028a8e0d0c3c65a4"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/kahe.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/kahe.cc",
+          "sha256": "393e0960e3bc3104d71c6335b61cc8f5fd6792ba3ad55af7b64f4820bf3ee263"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/kahe.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/kahe.h",
+          "sha256": "5f8e2426b1a810a11810e0b6fa10a096d105774262fa5bbf72aeefa280db4b76"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/kahe.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/kahe.rs",
+          "sha256": "c4fc3c7e9feef3ad685d9f656a1a83ac7163a1ad9792aa6549dba2bcb2e3bac2"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/kahe_test.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/kahe_test.cc",
+          "sha256": "64d38849a2d63c9410f35e564a296a85f880cfad7e43254e752368ce86629623"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/kahe_test.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/kahe_test.rs",
+          "sha256": "13a3b0c6938069d2b4f4ed2651260591e2903c6f63845b5307e7c31093c09f3b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_aliases.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_aliases.h",
+          "sha256": "cd058624e4541d4c3a04bf900c8a011968c5e69bee0d92bb45ea7909c98e442b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_serialization.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_serialization.cc",
+          "sha256": "ddab0e26930faee78b22ca8a3c4c3d05dbde86609cf52768e144fee717f92bb4"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_serialization.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_serialization.h",
+          "sha256": "4d1da8b2a7be712c1e08c9a0fbfec713344c5e30b0753235133bd40ad6736357"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_serialization.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_serialization.rs",
+          "sha256": "72f9b955367480e8b3028fbdf1d53b3d93f6028f41b17241b76862107903b8b6"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_serialization_test.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_serialization_test.cc",
+          "sha256": "4481b3f9b2d887dd3ccce9c3c77de55b5980a889b68c75fa897c54f4a4902f15"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_types.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_types.cc",
+          "sha256": "0da2e7c18f651e645ab5d5b4a5e605385d51a779d6fb7673132146a6ed52c1c7"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_types.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_types.h",
+          "sha256": "9d733de4256bc7b27fdcf54ff8dbf6861edc19a14ca5cb6f974e48150c9cf235"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_types.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_types.rs",
+          "sha256": "ee34a77942d77a185c205c80a0e13c74003d92b86ff89443d01a6fa92c084b5a"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/shell_types_test.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/shell_types_test.cc",
+          "sha256": "ec62bdc61eaee72e05ce0cc71dfe62bf4c5a023c7840848c6757466a7fa90483"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/single_thread_hkdf.cc",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/single_thread_hkdf.cc",
+          "sha256": "31cb91d4cfe42ebba4f6904bad74eb53d4c403b11495c68b5b93b0d04b3105ac"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/single_thread_hkdf.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/single_thread_hkdf.h",
+          "sha256": "7c6c48b7bd84278ded26724d4d4602086a1300c4f1fcec0a9a8e8701654001d2"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/single_thread_hkdf.rs",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/single_thread_hkdf.rs",
+          "sha256": "d069f2f839751413958a93ce65087323d14cab2b28e18bf443b0280770d7f399"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/shell_wrapper/testing_utils.h",
+          "source": "protocols/secure-aggregation-main/shell_wrapper/testing_utils.h",
+          "sha256": "d373ef52a5d62b74648ae33d644241b93dd2ab53bd29b9a0ab364cb50f8514ec"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/aggregation_config.rs",
+          "source": "protocols/secure-aggregation-main/willow/api/aggregation_config.rs",
+          "sha256": "fde50b39d1675fbf42e25c2514e632a137127244e89c65b05a2ae13782fcaf6e"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/api/BUILD",
+          "sha256": "f0b40d600048375db51c3993c58d1cad5a256b77afd4b182cd33172f312cfff0"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/client.cc",
+          "source": "protocols/secure-aggregation-main/willow/api/client.cc",
+          "sha256": "2d3c9a2be9ed0112a6f50836d04dc00d98f2ec5f6e63bc212340ffb2a2727711"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/client.h",
+          "source": "protocols/secure-aggregation-main/willow/api/client.h",
+          "sha256": "dcf788bdc515bdaf7edd080f75ab5e713ce5c1548fe882e77b43ad8699da9a8d"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/client.rs",
+          "source": "protocols/secure-aggregation-main/willow/api/client.rs",
+          "sha256": "5f573c0e3dc589f495dba106388c37958998f48981311312d2afd1dc63121060"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/client_test.cc",
+          "source": "protocols/secure-aggregation-main/willow/api/client_test.cc",
+          "sha256": "29de3a2d18adc664efc8384fbd0c8123f69da667777c0be718b5357fd691f447"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/proto_serialization.rs",
+          "source": "protocols/secure-aggregation-main/willow/api/proto_serialization.rs",
+          "sha256": "aa323938fd0ee5ceb85b537b16745f9f2c362dfece3add8528484e949d9c1ddc"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/server_accumulator.cc",
+          "source": "protocols/secure-aggregation-main/willow/api/server_accumulator.cc",
+          "sha256": "ae7d3b3c0d467a6445131c5d81aee5ad3aab626f367c806bc35c692dcf421ce9"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/server_accumulator.h",
+          "source": "protocols/secure-aggregation-main/willow/api/server_accumulator.h",
+          "sha256": "38ea032f093d6e41962321276e7f8af27997f83699549a13e76135809ad58585"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/server_accumulator.rs",
+          "source": "protocols/secure-aggregation-main/willow/api/server_accumulator.rs",
+          "sha256": "d4a57612dc1c30106ae8d3f63cdeaffa227caa7f2ed6100585117f7e3fd6cb06"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/api/server_accumulator_test.cc",
+          "source": "protocols/secure-aggregation-main/willow/api/server_accumulator_test.cc",
+          "sha256": "1865b7975d10e973487f254d4d3b40a57198b3574f9cc8652c126ecd4e076030"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/benches/BUILD",
+          "sha256": "236925b3b3c08c15d43de273831cd82a5fd30fb518cde4b9cb514fb9c7e86e40"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/osa_vosa_shell_kahe_real_fl_bridge.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/osa_vosa_shell_kahe_real_fl_bridge.rs",
+          "sha256": "c4c118ec2b1ed45c3d8f19580a7dc39f3910f7fd27725343e0e2a13e1187f68b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/README.md",
+          "source": "protocols/secure-aggregation-main/willow/benches/README.md",
+          "sha256": "ba7163617b538ae6b1565a3205d237c0a6bd632b7d82e5d92c9d6c7a81593f6e"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/real_fl_bridge.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/real_fl_bridge.rs",
+          "sha256": "20a0c29cc2d67cc5006f821803875762e09688573dfb7479b84af9d7bc72963b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_osa_full_unified.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_osa_full_unified.rs",
+          "sha256": "838b7aa5e2e15f78fb8f62da3c27a3593f5b64a38c072b7efd31086e4ba3a4db"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_osa_shell_kahe_compare.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_osa_shell_kahe_compare.rs",
+          "sha256": "af44d3df9a543687f1b1e784bbc5a8287d85ccfb6015dd4ac37699ac144df3e6"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_plain_fedavg_compare.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_plain_fedavg_compare.rs",
+          "sha256": "58286a38357ec4e10fec8dae39c9fb7bd916d8fbdfaea2a28f9811c3624f5ad4"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_secure_agg_compare.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_secure_agg_compare.rs",
+          "sha256": "e8827dcc4e359b2c743786d49599a26ea662c0325b61823e74dc3f34441cb489"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_shell_benchmark.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_shell_benchmark.rs",
+          "sha256": "790c454cebc7d614de562531423eedeac11af09e27f85d31ee26a635334025ca"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_vosa_verification_only.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_vosa_verification_only.rs",
+          "sha256": "c19af676fd5924f12c30afe7bff46c60955840835b5539b2af23855c5e0d19e6"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_willow_full_unified.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_willow_full_unified.rs",
+          "sha256": "bca8f7e895b2a47d614ddf63af3414ca7adb58ed264ea6ceb536e78a36d4096c"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/run_willow_paper_full_unified.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/run_willow_paper_full_unified.rs",
+          "sha256": "da2c64e53ae83be7ffc2091984ff840b83fdfb5311611c9da1744fb13e6ec3ff"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/benches/shell_benchmarks.rs",
+          "source": "protocols/secure-aggregation-main/willow/benches/shell_benchmarks.rs",
+          "sha256": "8bf1a8ed8a61750e6401ea41a4991405a3c4f09c929702f94d4b97b8b23c754c"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/ahe_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/ahe_traits.rs",
+          "sha256": "9e6cf2b22ba593b943f1573aa481a4865449bcdd18949487f816c0b30647b178"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/crypto/BUILD",
+          "sha256": "808d2c5289230480281665307c8225a1bca0fa123f8f1d4b814698ce9f423122"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/kahe_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/kahe_traits.rs",
+          "sha256": "b98325e5ba9136eaa9cfd3e9d4ffa5df8addcab547bbae8b8ba6efa8f4d0c6c0"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/linear_ip_serialization.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/linear_ip_serialization.rs",
+          "sha256": "1dc6690b979b2ee32aab40b342c2a3136b8eb2c2af32886b74b09c59a172e5c1"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/parameters_utils.cc",
+          "source": "protocols/secure-aggregation-main/willow/crypto/parameters_utils.cc",
+          "sha256": "a7a6eb1e52352574eeb9af70ad79149c0a6e46069804bbed4555f5d77423968b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/parameters_utils.h",
+          "source": "protocols/secure-aggregation-main/willow/crypto/parameters_utils.h",
+          "sha256": "c32632893b7503137a955fd12a7e29a29cc5402ef0dcc7fcadfa055c86f489fa"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/parameters_utils_test.cc",
+          "source": "protocols/secure-aggregation-main/willow/crypto/parameters_utils_test.cc",
+          "sha256": "47f0c7aa3e0ecc77d518276dd1ae908bea44415954703ed6d296da046bcda862"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/prng_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/prng_traits.rs",
+          "sha256": "16f9c93d76477c15e47198a6c2650932e516d7c9922f55e7fda9fb4240f6c2d8"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/rlwe_relation_serialization.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/rlwe_relation_serialization.rs",
+          "sha256": "50ddd416e8e496821f25f680e833c900314ef863aa8647c66bebd0d28c41b199"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/shell_ahe.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/shell_ahe.rs",
+          "sha256": "4c7ee299f630679929f944e8932eb0036c3b0cbfce1130b03f095d87ba893b02"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/shell_kahe.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/shell_kahe.rs",
+          "sha256": "d9918a7d2e4a6d55567cb439f1833c8ee6bf14813b6fe593e21f6660232a1105"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/shell_parameters.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/shell_parameters.rs",
+          "sha256": "31892e92f3c50f7361b3f5cbeb71bb6f230251154335f6804ef471dfa2ecf338"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/shell_parameters_generation.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/shell_parameters_generation.rs",
+          "sha256": "d196f54b8a240c6370c95e49122e31bbc1c9484524825a992f8b374182a4a08c"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/shell_parameters_utils.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/shell_parameters_utils.rs",
+          "sha256": "c10c2f7118d892996eff7cfdbd6d0fbb49f0ba13550f6b214a76b08e25e7bcf2"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/shell_vahe.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/shell_vahe.rs",
+          "sha256": "33ccbe45debae89423c5a8b831c474d08840cc1f6a5a7c7dd7c2aa19962b64a5"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/single_thread_hkdf.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/single_thread_hkdf.rs",
+          "sha256": "54b2f8897b4b5f32258a65c8e36093ef8dba85e23ba37bba5c29f0482cc3d7ab"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/vahe_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/vahe_traits.rs",
+          "sha256": "df0a58feb16a04157ec47de7e09470d218264a85ab198f6d3539f76ae0b6d4df"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/zk_linear_ip.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/zk_linear_ip.rs",
+          "sha256": "d20e15313bcc10a9e1717b8ea3069178591979af8f2fc6f890f3c2303ef790ec"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/zk_rlwe_relation.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/zk_rlwe_relation.rs",
+          "sha256": "21dfa8b98065afd76be5049ad8b75e857d3043d74d246636c62583f4705de90c"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/crypto/zk_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/crypto/zk_traits.rs",
+          "sha256": "bc3d3ed8e10f620eb4fc1f21b3afd70ef57dd7e193faa34889ae5a576f8ab961"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/BUILD",
+          "sha256": "afbf219566f42068bcdd50f1710290e7654b9131863114eb73cb2b67b20ba0c3"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/codec.h",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/codec.h",
+          "sha256": "46ed701cec1ae37890b70ca6441d15e3c1805beb184dcc6eaff00ae743bd8570"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/codec_bindings.cc",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/codec_bindings.cc",
+          "sha256": "f0bf4f2e419d19a0ab32a97b29cb66fac0e75496d1c1a5883dc941e4766aad57"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/codec_bindings_test.py",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/codec_bindings_test.py",
+          "sha256": "d6a365adac3f6c25a9327a147b91b43f1fce5ce5b6b0eabaf8a2a6aa976f15c9"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/codec_factory.cc",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/codec_factory.cc",
+          "sha256": "855df8027493cbe590ebfec4b66271d358dbed7560f58a5200c85d12288acedf"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/codec_factory.h",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/codec_factory.h",
+          "sha256": "2dad62077ecb47aaed3fd526fb4ebd09376610619c01e25c1030b80410db5b70"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/input_encoding/explicit_codec_test.cc",
+          "source": "protocols/secure-aggregation-main/willow/input_encoding/explicit_codec_test.cc",
+          "sha256": "749dc14de05fe04c4f702fe8e22d6f17bc51ac11583cbf24eb554a1628dbd895"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/shell/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/proto/shell/BUILD",
+          "sha256": "94afc6c08f562141abcd678c0bb9db50d0cf08e8adf856d6e8dd559dfec50fe3"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/shell/ciphertexts.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/shell/ciphertexts.proto",
+          "sha256": "8403705c6d4f3d103b74f81a92ab2101112c78e81be1038eb76ffd07af0dda9f"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/shell/parameters.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/shell/parameters.proto",
+          "sha256": "59d70f94808c893a9b5382426673a8a4ae7f0f4e03360bd2cd0220d28bc449aa"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/aggregation_config.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/aggregation_config.proto",
+          "sha256": "2fac414a8cac83b6dadf63c4a1803ce0dcac8ccbdaf3e545d1b8a4a413dd67ba"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/BUILD",
+          "sha256": "2158db06b84301f886797f666238fbc35490731bc84c9274bd4f4971ac8b35cd"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/committee_selector.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/committee_selector.proto",
+          "sha256": "4286de47e0bc26a1ba89e309c40a6c735fefaa329e912eb4c6f5362ab34fb0fb"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/decryptor.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/decryptor.proto",
+          "sha256": "250161f33bc78aa88ba4acd4852bdedb3954ca7c123ff651879cf300baa8e1ca"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/input_spec.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/input_spec.proto",
+          "sha256": "c8a621af6d40e25346b73829490028a442475e30435aeb2a0eda608baf2919be"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/key.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/key.proto",
+          "sha256": "6923ac5618a7748a31f016ca563309df7961fd2ca57d40ac42e25ab70ad3f4d5"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/messages.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/messages.proto",
+          "sha256": "e6d0da0b464bcc16b7b78677f029d6cbb26a17a6a1fe428246544686d46c6c9e"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/willow/server_accumulator.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/willow/server_accumulator.proto",
+          "sha256": "6a214b5842dc5a0ea267a475c283076c062fb1b1f85540ff97661cc23ef59862"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/zk/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/proto/zk/BUILD",
+          "sha256": "af4411671d6f5d0907bd659076ce849955da85a774cfbff21e13a3ab7e724077"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/proto/zk/proofs.proto",
+          "source": "protocols/secure-aggregation-main/willow/proto/zk/proofs.proto",
+          "sha256": "6c3460c2af29d9426440346dee426219243e6d620fb224dfbbd87500bf804bd0"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/protocol/BUILD",
+          "sha256": "1b9279145079d268dbe7b74d175e229ff564602f79a6e79394c536205bb4aec2"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/client_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/client_traits.rs",
+          "sha256": "242619a897c4a28afd09da97fc61e8ebbef3f37dd6968e89fab9a53b1e73a8ab"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/decryptor_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/decryptor_traits.rs",
+          "sha256": "1ba3646a4b6039fc3f8b107b073f1e6d124ea16aede2d70d43286489cfae9b9e"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/messages.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/messages.rs",
+          "sha256": "43b6979c077b22ee18afd928017f7e1fc9f172ebe371703cbfe200048ca9c35b"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/osa_shell_kahe.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/osa_shell_kahe.rs",
+          "sha256": "4083b225092260549e01cc1626930e1a712c75513e0e5b2582fb99ac8ad6a8c9"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/server_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/server_traits.rs",
+          "sha256": "81888d4a8b9e19db496fc450ca0f1f158998ee6619cc8d5853367e7bb1f67b8a"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/verifier_traits.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/verifier_traits.rs",
+          "sha256": "919a26f4176d4bcd41a22fe585cc31070ae2b14390aaf6e25205e83832307171"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/vosa_verification.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/vosa_verification.rs",
+          "sha256": "8f7be6210ea3545cfe38a44882684faedbf4c190affe0ecd61ede5d24bbab566"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/willow_full_aux.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/willow_full_aux.rs",
+          "sha256": "65b7ef10d0497678b79bfbe13a305085f1fe800b4c5f6c162d48a3f4bc38d45d"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/willow_v1_client.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/willow_v1_client.rs",
+          "sha256": "d7deea0bfe7553407032e98129e8324ca0a6a0c553b30f2d17c69ac2d9e931dc"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/willow_v1_decryptor.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/willow_v1_decryptor.rs",
+          "sha256": "8ce5981db20dac2cf05d186b7e0c9d03eadbad46b6aae6733533f033a814f97d"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/willow_v1_server.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/willow_v1_server.rs",
+          "sha256": "13d942c1189e3a1902d303943487b2f99c338f5c795f832be4e381bb985edb05"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/protocol/willow_v1_verifier.rs",
+          "source": "protocols/secure-aggregation-main/willow/protocol/willow_v1_verifier.rs",
+          "sha256": "8c02be5a79501cccd093ce603d78a4f50c241e3c4898191d93eeae92689d0347"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/BUILD",
+          "sha256": "4ba9d7ae6661bc72be5a6270978e0bca40bd90713bfd3b13a2dc9411a418931d"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/fake_prng.rs",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/fake_prng.rs",
+          "sha256": "9e81eb25de5da89d6d336324dd5af092a22692888bf1319fba3a0e159fe28427"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor.cc",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor.cc",
+          "sha256": "63ca05520192045b26f39589d138330ef2357e47e118bbdbfcf9a377b2542ea9"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor.h",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor.h",
+          "sha256": "962101d1cc283678ea921f706c1345a38d5d651384bd2252b37b2d8d07671f32"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor.rs",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor.rs",
+          "sha256": "9ce48f1854d9787dbfbf8ceba8ed5e26cf3ada8f800568780cfa4688950568ae"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor_test.cc",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/shell_testing_decryptor_test.cc",
+          "sha256": "ea34cd55a8417aa059a5ff91564d1f2acc3cbc70549834fead41b856e3b72ce6"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/shell_testing_parameters.rs",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/shell_testing_parameters.rs",
+          "sha256": "f8e998e3f1ec5e500f9e325db6c9123e8aa081343f894398ac2570be0ee64a28"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/testing_utils.cc",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/testing_utils.cc",
+          "sha256": "19c2620d722ebda89ff65e52656d8687423421173c3a9fc56f0da29bd0e42e04"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/testing_utils.h",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/testing_utils.h",
+          "sha256": "92bce544244b3e2015066b6ff015b48333e371b526fd36e6da72b5fe121ff5e5"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/testing_utils/testing_utils.rs",
+          "source": "protocols/secure-aggregation-main/willow/testing_utils/testing_utils.rs",
+          "sha256": "dac2023d8aeb45cbca57dfb1ed3af80c87c1bdca40eef511bf0463d3abd1fe13"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/tests/BUILD",
+          "source": "protocols/secure-aggregation-main/willow/tests/BUILD",
+          "sha256": "2aa38e26b9142af34e614510d189aefe557fcc9ea49181210543b5a2ef9c75aa"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/tests/osa_shell_kahe.rs",
+          "source": "protocols/secure-aggregation-main/willow/tests/osa_shell_kahe.rs",
+          "sha256": "0d84f6f1cf32296dc31d90918e148173fe3a460289020d204d3722437322b312"
+        },
+        {
+          "original": "project/source/secure-aggregation-main/willow/tests/willow_v1_shell.rs",
+          "source": "protocols/secure-aggregation-main/willow/tests/willow_v1_shell.rs",
+          "sha256": "7125a3c7b772a70091433cf4c03e7586b4176110525254e68023769a9ea13d54"
+        },
+        {
+          "original": "project/third_party/bazel-8.1.1-linux-x86_64",
+          "source": "third_party/bazel-8.1.1-linux-x86_64",
+          "sha256": "a2a095d7006ea70bdfdbe90a71f99f957fee1212d4614cfcfdbe3aadae681def"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/1.3.1.tar.gz",
+          "source": "third_party/bazel-distdir/1.3.1.tar.gz",
+          "sha256": "4d964f874b251abc280ee28f0f187de3c13a6122a9561524f66a10768ca2d837"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/1.9.6.tar.gz",
+          "source": "third_party/bazel-distdir/1.9.6.tar.gz",
+          "sha256": "f93b6dd7ce796b13d02c108bc9f79812245a82e577581c4c9aabe57075c90ea2"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/224b014b1e6ebd1b9c1e134ebb5fbce899844c79.zip",
+          "source": "third_party/bazel-distdir/224b014b1e6ebd1b9c1e134ebb5fbce899844c79.zip",
+          "sha256": "6e7017e87270a87ea1a0366e7dea5e49777bb245a724987beaa1a78d19c5f58d"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/6b521659f4bb37d88ccb981f30319c29c373c06f.zip",
+          "source": "third_party/bazel-distdir/6b521659f4bb37d88ccb981f30319c29c373c06f.zip",
+          "sha256": "dab3f04fd616092f0880df9b143014e8f73b409fe288fd275d5f7c26a95805e1"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/9151e03956a34b795ca0d58e19d8a9991904b459.zip",
+          "source": "third_party/bazel-distdir/9151e03956a34b795ca0d58e19d8a9991904b459.zip",
+          "sha256": "1789f5d8b65f4dc336e3d1ed4dd080c3788adf9894ec48bad464ed8caddc4b86"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/abseil-cpp-20260107.0.tar.gz",
+          "source": "third_party/bazel-distdir/abseil-cpp-20260107.0.tar.gz",
+          "sha256": "4c124408da902be896a2f368042729655709db5e3004ec99f57e3e14439bc1b2"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/apple_support.1.24.1.tar.gz",
+          "source": "third_party/bazel-distdir/apple_support.1.24.1.tar.gz",
+          "sha256": "a270f034007ab6111645d27a8ed88b47ce2a75b608af633eeca889cb5e07ae0d"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/ba91614c11c42c7aa6e2e4f96c08721748af5b18.zip",
+          "source": "third_party/bazel-distdir/ba91614c11c42c7aa6e2e4f96c08721748af5b18.zip",
+          "sha256": "b2d6e7308e4289ed4e6d86d441d735650f44f697e740f41cbd9001fc7229edf2"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/bazel-skylib-1.9.0.tar.gz",
+          "source": "third_party/bazel-distdir/bazel-skylib-1.9.0.tar.gz",
+          "sha256": "3b5b49006181f5f8ff626ef8ddceaa95e9bb8ad294f7b5d7b11ea9f7ddaf8c59"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/bazel_features-v1.43.0.tar.gz",
+          "source": "third_party/bazel-distdir/bazel_features-v1.43.0.tar.gz",
+          "sha256": "c26b4e69cf02fea24511a108d158188b9d8174426311aac59ce803a78d107648"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/boringssl-0.20251002.0.tar.gz",
+          "source": "third_party/bazel-distdir/boringssl-0.20251002.0.tar.gz",
+          "sha256": "f96733fc3df03d4195db656d1b7b8c174c33f95d052f811f0ecc8f4e4e3db332"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/buildozer-v7.1.2.tar.gz",
+          "source": "third_party/bazel-distdir/buildozer-v7.1.2.tar.gz",
+          "sha256": "fc77c37f08e674508a5798d84918ae52b3b9510199e0ac01112a378967da4158"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/c3deba7cc1ceccbeab35b60e7ffd045c4b0842b2.zip",
+          "source": "third_party/bazel-distdir/c3deba7cc1ceccbeab35b60e7ffd045c4b0842b2.zip",
+          "sha256": "8f3843d07c440b7426e0d217ebadf35d165191bb8dc209e9c2f844dbfb003811"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/cargo-bazel-x86_64-unknown-linux-musl",
+          "source": "third_party/bazel-distdir/cargo-bazel-x86_64-unknown-linux-musl",
+          "sha256": "760b4fa5d6ebd49e30ae719442a1fd2a79333cf6158e93cd46fd0c0c924ce15b"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/cxx-1.0.192.tar.gz",
+          "source": "third_party/bazel-distdir/cxx-1.0.192.tar.gz",
+          "sha256": "83428069879203d3f4116396966547e676c7b9a552b893b967d739b4542bf5df"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/googletest-1.17.0.tar.gz",
+          "source": "third_party/bazel-distdir/googletest-1.17.0.tar.gz",
+          "sha256": "65fab701d9829d38cb77c14acdc431d2108bfdbf8979e40eb8ae567edf10b27c"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/include.zip",
+          "source": "third_party/bazel-distdir/include.zip",
+          "sha256": "69cc88207ce91347ea530b227ff0776db82dcb8de6704e1a3d74f4841bc651cf"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/platforms-1.0.0.tar.gz",
+          "source": "third_party/bazel-distdir/platforms-1.0.0.tar.gz",
+          "sha256": "3384eb1c30762704fbe38e440204e114154086c8fc8a8c2e3e28441028c019a8"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/pybind11_bazel-3.0.1.tar.gz",
+          "source": "third_party/bazel-distdir/pybind11_bazel-3.0.1.tar.gz",
+          "sha256": "4a8983811b562a02ef9ccc545c93dc275e23054ac8996170b8975fa387afa890"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/re2-2025-08-12.zip",
+          "source": "third_party/bazel-distdir/re2-2025-08-12.zip",
+          "sha256": "817a073d6cbb1bc6fb91a4267375998a361437470d11bd27dea6f00d5b963990"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_apple.3.16.0.tar.gz",
+          "source": "third_party/bazel-distdir/rules_apple.3.16.0.tar.gz",
+          "sha256": "86ff9c3a2c7bc308fef339bcd5b3819aa735215033886cc281eb63f10cd17976"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_cc-0.2.17.tar.gz",
+          "source": "third_party/bazel-distdir/rules_cc-0.2.17.tar.gz",
+          "sha256": "283fa1cdaaf172337898749cf4b9b1ef5ea269da59540954e51fba0e7b8f277a"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_java-8.6.1.tar.gz",
+          "source": "third_party/bazel-distdir/rules_java-8.6.1.tar.gz",
+          "sha256": "c5bc17e17bb62290b1fd8fdd847a2396d3459f337a7e07da7769b869b488ec26"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_jvm_external-6.7.tar.gz",
+          "source": "third_party/bazel-distdir/rules_jvm_external-6.7.tar.gz",
+          "sha256": "a1e351607f04fed296ba33c4977d3fe2a615ed50df7896676b67aac993c53c18"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_kotlin-v1.9.6.tar.gz",
+          "source": "third_party/bazel-distdir/rules_kotlin-v1.9.6.tar.gz",
+          "sha256": "3b772976fec7bdcda1d84b9d39b176589424c047eb2175bed09aac630e50af43"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_license-1.0.0.tar.gz",
+          "source": "third_party/bazel-distdir/rules_license-1.0.0.tar.gz",
+          "sha256": "26d4021f6898e23b82ef953078389dd49ac2b5618ac564ade4ef87cced147b38"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_pkg-1.0.1.tar.gz",
+          "source": "third_party/bazel-distdir/rules_pkg-1.0.1.tar.gz",
+          "sha256": "d20c951960ed77cb7b341c2a59488534e494d5ad1d30c4818c736d57772a9fef"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_proto-7.1.0.tar.gz",
+          "source": "third_party/bazel-distdir/rules_proto-7.1.0.tar.gz",
+          "sha256": "14a225870ab4e91869652cfd69ef2028277fc1dc4910d65d353b62d6e0ae21f4"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_python-1.9.0.tar.gz",
+          "source": "third_party/bazel-distdir/rules_python-1.9.0.tar.gz",
+          "sha256": "098ba13578e796c00c853a2161f382647f32eb9a77099e1c88bc5299333d0d6e"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_rust-0.68.1.tar.gz",
+          "source": "third_party/bazel-distdir/rules_rust-0.68.1.tar.gz",
+          "sha256": "c8aa806cf6066679ac23463241ee80ad692265dad0465f51111cbbe30b890352"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_shell-v0.6.1.tar.gz",
+          "source": "third_party/bazel-distdir/rules_shell-v0.6.1.tar.gz",
+          "sha256": "e6b87c89bd0b27039e3af2c5da01147452f240f75d505f5b6880874f31036307"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/rules_swift.2.1.1.tar.gz",
+          "source": "third_party/bazel-distdir/rules_swift.2.1.1.tar.gz",
+          "sha256": "9919ed1d8dae509645bfd380537ae6501528d8de971caebed6d5185b9970dc4d"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/stardoc-0.7.2.tar.gz",
+          "source": "third_party/bazel-distdir/stardoc-0.7.2.tar.gz",
+          "sha256": "0e1ed4a98f26e718776bd64d053d02bb34d98572ccd03d6ba355112a1205706b"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/v0.1.1.tar.gz",
+          "source": "third_party/bazel-distdir/v0.1.1.tar.gz",
+          "sha256": "6461c1c5744442b394f46645957d6bd3420eb1b421908fe63caa03091b1b3655"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/v0.7.1.tar.gz",
+          "source": "third_party/bazel-distdir/v0.7.1.tar.gz",
+          "sha256": "00e4a87e87b7e7612f519a41e491f16623b12423620006f59f5688bfd8d13b08"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/v2.2.2.tar.gz",
+          "source": "third_party/bazel-distdir/v2.2.2.tar.gz",
+          "sha256": "34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf"
+        },
+        {
+          "original": "project/third_party/bazel-distdir/zlib-1.3.1.tar.gz",
+          "source": "third_party/bazel-distdir/zlib-1.3.1.tar.gz",
+          "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"
+        },
+        {
+          "original": "project/third_party/charm-0.50-2b58a7e.tar.gz",
+          "source": "third_party/charm-0.50-2b58a7e.tar.gz",
+          "sha256": "09563bd6c5ca6727420bd09a806326e03350b549c2dbe8e42d746c7f4e601f70"
+        },
+        {
+          "original": "project/third_party/LICENSES/Charm-Crypto-LICENSE.txt",
+          "source": "third_party/LICENSES/Charm-Crypto-LICENSE.txt",
+          "sha256": "b73149fe2f4767836cc1b51358c4c61289c44217a6c2dfd750928cc18121e3d1"
+        },
+        {
+          "original": "project/third_party/LICENSES/opa-secure-aggregation-LICENSE.txt",
+          "source": "third_party/LICENSES/opa-secure-aggregation-LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "original": "project/third_party/LICENSES/PBC-0.5.14-COPYING.txt",
+          "source": "third_party/LICENSES/PBC-0.5.14-COPYING.txt",
+          "sha256": "b73149fe2f4767836cc1b51358c4c61289c44217a6c2dfd750928cc18121e3d1"
+        },
+        {
+          "original": "project/third_party/LICENSES/secure-aggregation-main-LICENSE.txt",
+          "source": "third_party/LICENSES/secure-aggregation-main-LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "original": "project/third_party/LICENSES/setuptools-83.0.0-LICENSE.txt",
+          "source": "third_party/LICENSES/setuptools-83.0.0-LICENSE.txt",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+        },
+        {
+          "original": "project/third_party/pbc-0.5.14.tar.gz",
+          "source": "third_party/pbc-0.5.14.tar.gz",
+          "sha256": "772527404117587560080241cedaf441e5cac3269009cdde4c588a1dce4c23d2"
+        },
+        {
+          "original": "project/third_party/python-wheels/setuptools-83.0.0-py3-none-any.whl",
+          "source": "third_party/python-wheels/setuptools-83.0.0-py3-none-any.whl",
+          "sha256": "29b23c360f22f414dc7336bb39178cc7bcbf6021ed2733cde173f09dba19abb3"
+        },
+        {
+          "original": "README_CN.md",
+          "source": "README/RUN_GUIDE_CN.md",
+          "sha256": "c90b53f6a408ca9b40c9d617fb2ba1cc382554ee94ba4b3b1659a213649e07b7",
+          "packaging_original_sha256": "793120e5c2dee8f2a0bc55d3adba5a8e37ec2ebf4507ed1b343ea05c9e2d0cb1"
+        },
+        {
+          "original": "requirements.txt",
+          "source": "requirements.txt",
+          "sha256": "a3099793241ddd3be7d84dac378c7acb68dae3d65d8fe7c9bc6281cb26dcf17a"
+        },
+        {
+          "original": "scripts/bazel.sh",
+          "source": "scripts/build/bazel.sh",
+          "sha256": "19c8b4dff93903a92abbd5ecb6b8f7bdb7d30dc9e99abf37cef5230f4d7149c4"
+        },
+        {
+          "original": "scripts/build.sh",
+          "source": "scripts/build/paper.sh",
+          "sha256": "1a61f79a5aa839117095d5d1648098cef4d1c6cced8637d55b8210ca38c770b2"
+        },
+        {
+          "original": "scripts/env.sh",
+          "source": "scripts/environment/paper_env.sh",
+          "sha256": "19f7146f3bd458a95e9f7e41856d491310dd8855b0385466f0da22099ff327d4"
+        },
+        {
+          "original": "scripts/plot.py",
+          "source": "plotting/paper.py",
+          "sha256": "324b62480c0753b43b57dca9784710391f633370dd26b81b448eb2540196937f",
+          "original_sha256": "90e4411b2acd964a611a6c69991dcd55aaeb3d99a1c687dd70c6737b97d558af",
+          "revision": "mean-only-inset-20261016"
+        },
+        {
+          "original": "scripts/plot.sh",
+          "source": "scripts/plot/paper.sh",
+          "sha256": "a36088c102aa07ec17ad7dbdc34c2a1fc942cf33930c899568c377df53b6969b"
+        },
+        {
+          "original": "scripts/run_all.sh",
+          "source": "scripts/run/paper.sh",
+          "sha256": "b8ab44e1a04a9dc0ad35bb4aae7c1e86601d41ac4df948d3dc460fd272cc5235"
+        },
+        {
+          "original": "scripts/setup.sh",
+          "source": "scripts/setup/paper.sh",
+          "sha256": "0a319c3b9688dfbcc93a97c10f8eea3e92f866a6947cb99b20b4d42b0e463387"
+        },
+        {
+          "original": "scripts/status.sh",
+          "source": "scripts/monitor/paper.sh",
+          "sha256": "2c98885e045d36ad09171b525e67ee171da657a7a340bd2112e9093c56a16813"
+        },
+        {
+          "original": "scripts/suite.py",
+          "source": "experiments/shared/paper_suite.py",
+          "sha256": "23c8c4a617128af26e8e9182bb777a4f10ff9ede3e88e097e60383c132a10d1c"
+        },
+        {
+          "original": "scripts/validate_ste.py",
+          "source": "scripts/validation/validate_ste.py",
+          "sha256": "c923babdaa3593fb48a3b0bb4d384ad03530676a8a0646762f01074f2e924b29"
+        },
+        {
+          "original": "tacita/bridge/BUILD",
+          "source": "protocols/tacita/bridge/BUILD",
+          "sha256": "d1d9a17a15a76ecae9c867069ed7f06655e680af2a449dd734673ddf6873b046"
+        },
+        {
+          "original": "tacita/bridge/kahe_stage.rs",
+          "source": "protocols/tacita/bridge/kahe_stage.rs",
+          "sha256": "ccfeb82f299b51895359fd96e301a92be04cdfec997e0d831db6b1cff4995746"
+        },
+        {
+          "original": "tacita/Cargo.lock",
+          "source": "protocols/tacita/Cargo.lock",
+          "sha256": "a2d7487037aca1834d803afd80b480ee19fcf0da0339d1e8769177ee9fc62be9"
+        },
+        {
+          "original": "tacita/Cargo.toml",
+          "source": "protocols/tacita/Cargo.toml",
+          "sha256": "62e1ee474f591c5174c8ba482fb32deddcb0cd027492a49ea90cebd8c07a0b09"
+        },
+        {
+          "original": "tacita/LICENSE",
+          "source": "protocols/tacita/LICENSE",
+          "sha256": "7b659d0b2e17c08d146524081de8acea579c80268b211e6fa8ac605391f226b3"
+        },
+        {
+          "original": "tacita/licenses/Apache-2.0.txt",
+          "source": "protocols/tacita/licenses/Apache-2.0.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "original": "tacita/scripts/build.sh",
+          "source": "scripts/tacita/build.sh",
+          "sha256": "61fe00da146a3fc0239a0c34e0eec8b239277307356b1c6ff79de4e8cb76cbc7"
+        },
+        {
+          "original": "tacita/scripts/build_fig7_bridge.sh",
+          "source": "scripts/tacita/build_fig7_bridge.sh",
+          "sha256": "16d7106096e2222e2fae856818bf220ee7ffa2a8134d2886c68b66723f583e7c"
+        },
+        {
+          "original": "tacita/scripts/build_kahe_bridge.sh",
+          "source": "scripts/tacita/build_kahe_bridge.sh",
+          "sha256": "a0157ed607f47ee47951bf6fbc1dc40737f20d2eb898d55d94fa07880567f77e"
+        },
+        {
+          "original": "tacita/scripts/compare.py",
+          "source": "scripts/tacita/compare.py",
+          "sha256": "a31ae18177019518094a4ae96dc48acdb0b8d37de68016e3cf936fdfc0c1536c"
+        },
+        {
+          "original": "tacita/scripts/fig7_validation.py",
+          "source": "scripts/tacita/fig7_validation.py",
+          "sha256": "85e6715bec4c0d07434adbc9f892584d9f2fffb89b19c95637923fc6d0661911"
+        },
+        {
+          "original": "tacita/scripts/run.py",
+          "source": "scripts/tacita/run.py",
+          "sha256": "d8b59c18e7cd7136d8a39f949affec59e66a2e0a1c47e10bb4d88f186806c93d"
+        },
+        {
+          "original": "tacita/scripts/validate_fig7.py",
+          "source": "scripts/tacita/validate_fig7.py",
+          "sha256": "3f4e7942b871a20dc23212391bffe4e3f8110266decb65651a0c0414e23660ef"
+        },
+        {
+          "original": "tacita/src/benchmark.rs",
+          "source": "protocols/tacita/src/benchmark.rs",
+          "sha256": "98b406e1b2d2fe779e0a6313d9b3285cd4488fd826ff9602f9670acc20d89f72"
+        },
+        {
+          "original": "tacita/src/fig7.rs",
+          "source": "protocols/tacita/src/fig7.rs",
+          "sha256": "c5fa1c1f5a49f5a17bda14ba17a857fe73f3eba746063db3a6f8ae077c7c8fcb"
+        },
+        {
+          "original": "tacita/src/fig7_benchmark.rs",
+          "source": "protocols/tacita/src/fig7_benchmark.rs",
+          "sha256": "b584a1db3b8fd2bb770d12a1863035726a536646c3b0f755e7f45b633eef5134"
+        },
+        {
+          "original": "tacita/src/lib.rs",
+          "source": "protocols/tacita/src/lib.rs",
+          "sha256": "f445720e526d9a66de7415fabd442909802fbe42466e53c11c6dda14113df105"
+        },
+        {
+          "original": "tacita/src/main.rs",
+          "source": "protocols/tacita/src/main.rs",
+          "sha256": "c394d92f16c3f975dcd7a8d6aac9e182595193608bf1e749771e9ffb918b2f8f"
+        },
+        {
+          "original": "tacita/src/ste.rs",
+          "source": "protocols/tacita/src/ste.rs",
+          "sha256": "4bd04a5bf63f1cbbb721bf2c2422349a0a6bd992190742888b0342e7eb9477fc"
+        },
+        {
+          "original": "tacita/tests/fig7.rs",
+          "source": "protocols/tacita/tests/fig7.rs",
+          "sha256": "6359f23a496cf7faeef9c2ae67158311b15b1f29432c2098a4816c20ac35d480"
+        },
+        {
+          "original": "tacita/tests/protocol.rs",
+          "source": "protocols/tacita/tests/protocol.rs",
+          "sha256": "94a5f14bc2d373963b3ee2ff8bb2ed6884d27d2356bdbac8ff5979d5f88cee81"
+        },
+        {
+          "original": "tacita/tests/test_fig7_bridge.py",
+          "source": "protocols/tacita/tests/test_fig7_bridge.py",
+          "sha256": "683da5b1797df54f12ac2f5e88f86138e3d56748e74d4287172664f51fe393dd"
+        },
+        {
+          "original": "tacita/tests/test_fig7_validation.py",
+          "source": "protocols/tacita/tests/test_fig7_validation.py",
+          "sha256": "3cc38e7345fb91eb55338d392d776e7da8c90554f6b7276b4ba73b18a324ee6e"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/.gitignore",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/.gitignore",
+          "sha256": "abf4503388f96966b606b732e8692625ba24bfd0d270a494e168ec7c7f6e59a7"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/batch_eval.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/batch_eval.rs",
+          "sha256": "18cf994ea02df25b952d587026d9dea0f506e2e12944c01cd0e3fa290688a225"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/beatmev_pd.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/beatmev_pd.rs",
+          "sha256": "44dda37fefb70f487758d8b431bf2a240e1ee61113907c193208044775034c95"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/bte_pd.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/bte_pd.rs",
+          "sha256": "53493298828fb8a727234076a38392e4f6c618f8536b37642045397f501572bd"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/cca_validity.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/cca_validity.rs",
+          "sha256": "46a10e2829bb02cd05a10c4dd2dbfe5d74b10fca1c9cee26c7a6dae81e10ca0d"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/encryption.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/encryption.rs",
+          "sha256": "aba1b8ed6b11f42fc9f963fb487a4edf3bd726e39c676b6daa3c42f6c7a0e814"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/partial_decryption_proof.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/partial_decryption_proof.rs",
+          "sha256": "f29960bb732361263f749c5f11fbd6c63c2512cf9dd31c5bcca06a9b41acca9b"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/benches/sbte_pd.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/benches/sbte_pd.rs",
+          "sha256": "6ed0059532888aa1adec4cf5ad90439607624fcbf907f376c92cb97890e03820"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/Cargo.toml",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/Cargo.toml",
+          "sha256": "6d95843a00f9d4461b380f90226e6549a0fc516a97606ee57058ec5026d07a13"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/examples/endtoend.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/examples/endtoend.rs",
+          "sha256": "39fde7665a1a9251e5aba8797269280263e31fea2e73479fc9455f575abce8af"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/LICENSE",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/LICENSE",
+          "sha256": "d9957826def6664e3b972246e9430dd5bf6514537676c7f54591dfb83e56a669"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/README.md",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/README.md",
+          "sha256": "1b930bc18656fd62f7a82abf31de50ce356c22dd39819fa19e19ce5570a2b737"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/bte/crs.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/bte/crs.rs",
+          "sha256": "f50b2b700e9424997dc979314214fc4f81979f23f57cb85697ff8c28de708221"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/bte/decryption.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/bte/decryption.rs",
+          "sha256": "e2ba4f60e2bbc3d024da528273e22ba7d76fedc7f62dae45d8510fd913b6ac0a"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/bte/encryption.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/bte/encryption.rs",
+          "sha256": "115536a52edf218f4a71cb2a7da08159e6897d9bf0168c1b0897debe37a4b73e"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/bte/mod.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/bte/mod.rs",
+          "sha256": "9899a4a0a084cde2d81a2ab1a25be3246ece35c69396ab7deb9b399c05e80620"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/cca.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/cca.rs",
+          "sha256": "d15feb79787cf0df9870249314c508f054932c818703136844c21515bc08ae83"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/dlog/mod.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/dlog/mod.rs",
+          "sha256": "bfed8c368d7b01e213090bbf4d56a198c2f7dc27cd6c2c2e1d4c984fa2c300e8"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/lib.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/lib.rs",
+          "sha256": "74d5dc4a80ad17f8f94925b335b7dc5e54f63f14b87f254bde0b8fc92312a5d0"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/sbte.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/sbte.rs",
+          "sha256": "eccec5b6459aa5915644b17c89fc35ad442038b1fc0286dd758f7d02e1b71996"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/_main.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/_main.rs",
+          "sha256": "3913324e666318d7099ea593c58e7c9dd98928c33d605113502304e2e0d09505"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/aggregate.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/aggregate.rs",
+          "sha256": "3ca2e1c58abf98723a81906bff67a4a7f61cdde5efa11904940e887f7fd813ba"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/crs.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/crs.rs",
+          "sha256": "f1f7c4d63f5878360151e8666d6a28d6193c94f698d05be576f8ef152cbf1a2d"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/decryption.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/decryption.rs",
+          "sha256": "1d4fdeda1efa86fcc654e78b259f48d00bd3e9ef457d23e35ad7fd35b6ce5fd8"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/encryption.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/encryption.rs",
+          "sha256": "f99d581fa3535fb83b8d0779d24c01815984bdf829e2b5bc17adb94b9211621c"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/mod.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/mod.rs",
+          "sha256": "73d0bf4b6e656eb6047e53d53f36792f6f950af510e5f6cd47a4dcced6c3b669"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/setup.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/setup.rs",
+          "sha256": "670c262deceaba6842c57482ee3f326917ccaaf917afbb498f2c5bfefaa862ef"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/ste/utils.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/ste/utils.rs",
+          "sha256": "25a99b099009ca8c2af60c3bfffde7427ecb0495f056a91c0928029706e34f9a"
+        },
+        {
+          "original": "tacita/upstream/batched-silent-threshold-encryption/src/utils.rs",
+          "source": "protocols/tacita/upstream/batched-silent-threshold-encryption/src/utils.rs",
+          "sha256": "2e9a9144df7116d5caddf550e8f1a77cb5bf676c26f53542114b17f7fd97d604"
+        },
+        {
+          "original": "tests/fixtures/mpvas.log",
+          "source": "tests/paper/fixtures/mpvas.log",
+          "sha256": "a2704a8d9913c24024b9e40554d26454c6b0d3256bb98d51feaf859ba8ed1fd4"
+        },
+        {
+          "original": "tests/fixtures/opa.log",
+          "source": "tests/paper/fixtures/opa.log",
+          "sha256": "43cba50b3a40409ca0c1e50f7208e9a7f043efc52d9b81efc47f9d4f4faefbef"
+        },
+        {
+          "original": "tests/fixtures/osa.log",
+          "source": "tests/paper/fixtures/osa.log",
+          "sha256": "9c24294e52a075874d5a1afd21f259423ca98ee870b9b74fbadf74980cd8c4bb"
+        },
+        {
+          "original": "tests/fixtures/tacita.json",
+          "source": "tests/paper/fixtures/tacita.json",
+          "sha256": "f44c71b3673016a1a4dac9a7b1cd3ececc8edb4cb0419d3efd9fbedc40942eae"
+        },
+        {
+          "original": "tests/fixtures/vosa.log",
+          "source": "tests/paper/fixtures/vosa.log",
+          "sha256": "258dff78a525bb108362326726c1f414d34b03dd0c40763b4f34727d88b1f86c"
+        },
+        {
+          "original": "tests/fixtures/willow.log",
+          "source": "tests/paper/fixtures/willow.log",
+          "sha256": "8d619ddc662d60fb573970c1833a841c9f0239e71db1fda9e7410894f7dfd821"
+        },
+        {
+          "original": "tests/render_layout_check.py",
+          "source": "tests/paper/render_layout_check.py",
+          "sha256": "fba8ca5add953396c6ca35e03a6ad6754661925527569ffeaac909f4dce6972f"
+        },
+        {
+          "original": "tests/test_plots.py",
+          "source": "tests/paper/test_plots.py",
+          "sha256": "47af919f632d4ebec3e2c12536f48345f56408ef9c97832d157ffde45fb04364",
+          "original_sha256": "dd97af4081ebc39a58112f025f2232dd873934e0104ae79d0db4a7f216ab5972",
+          "revision": "mean-only-inset-20261016"
+        },
+        {
+          "original": "tests/test_suite.py",
+          "source": "tests/paper/test_suite.py",
+          "sha256": "ff65f6ee121e33651ceabbe80871ee85f93aabd7b9238f3ef0cd49753022af06"
+        },
+        {
+          "original": "scripts/renderer.py",
+          "source": "plotting/renderer.py",
+          "sha256": "59f657d4f05e9d20d3ecb3c4354732507be0fcf5a43d3c219e344a17ffdc9586",
+          "revision": "mean-only-inset-20261016",
+          "added_for": "plotting_only"
+        }
+      ]
+    },
+    "computation": {
+      "original_name": "OSA_Computation_Retest_20261013",
+      "files": [
+        {
+          "original": "base_files.json",
+          "source": "manifests/base_files.json",
+          "sha256": "d1ca49b7e7dc5461e204749019bb360814730bd3df8ad49a7316ac8a14ab590f",
+          "original_sha256": "e39074a10555ee5fb912e69cd46a5265257f5108492b38f38d465d16e1dc99b7",
+          "revision": "mean-only-inset-20261016"
+        },
+        {
+          "original": "build.py",
+          "source": "scripts/build/computation/build.py",
+          "sha256": "39885720d63473096cb24d2abee308be4af8beb128b5e30c83283216671d857b"
+        },
+        {
+          "original": "client_timing.rs",
+          "source": "scripts/build/computation/client_timing.rs",
+          "sha256": "9f7b390c2665b13a3b8e7477ec9720e4b3921406a642acec119d17d7e73363a2"
+        },
+        {
+          "original": "communication_reference.json",
+          "source": "config/communication_reference.json",
+          "sha256": "549ef012a72160db52aa2a78522ddb52b9e49e57958c9deaa7243734ea3d879e"
+        },
+        {
+          "original": "dependency_locks.py",
+          "source": "scripts/build/computation/dependency_locks.py",
+          "sha256": "f17f95eec03d1b2830f5810cbf5ed87b39896fa92213d7bbd26af347a762aceb"
+        },
+        {
+          "original": "export.sh",
+          "source": "scripts/export/computation.sh",
+          "sha256": "c47e44fe9a61e7bcd25d0df51b8af0f131f6a0d4f66ddbdce90bff599437e177"
+        },
+        {
+          "original": "instrument.py",
+          "source": "scripts/build/computation/instrument.py",
+          "sha256": "71efbb8c7cfe6131d66f0386666369c2f7118f3b2bbc6ac9b7667e56945d5af7"
+        },
+        {
+          "original": "locked_dependencies/opa-secure-aggregation.MODULE.bazel.lock",
+          "source": "third_party/locked_dependencies/opa-secure-aggregation.MODULE.bazel.lock",
+          "sha256": "14d1a97d99bd0311ab0d557dc94e8d412cdc5f84ba87ee1d97e232cafc52dbc0"
+        },
+        {
+          "original": "locked_dependencies/secure-aggregation-main.MODULE.bazel.lock",
+          "source": "third_party/locked_dependencies/secure-aggregation-main.MODULE.bazel.lock",
+          "sha256": "89a4898ad63fdd76a1fa31cd67cb6e3d50552466b6c6e2f4d65c2aa4522b869b"
+        },
+        {
+          "original": "package_manifest.json",
+          "source": "manifests/computation.json",
+          "sha256": "0918e3b9ba9456a7d03049d6e8e3f33853fdaa5a129e48f385c01653b3bcb44a",
+          "original_sha256": "82f6df509a4607118411d40c2fcc5d060cf44ff2452c87c4c6230b8d713d3c16",
+          "revision": "mean-only-inset-20261016"
+        },
+        {
+          "original": "plot_results.py",
+          "source": "plotting/computation.py",
+          "sha256": "198b85e553efa7b5933a4ebec4cc242556a4767733bcce127b7eda0991bf1ca4"
+        },
+        {
+          "original": "plotting/renderer.py",
+          "source": "plotting/renderer.py",
+          "sha256": "59f657d4f05e9d20d3ecb3c4354732507be0fcf5a43d3c219e344a17ffdc9586",
+          "original_sha256": "980b1e1ce4c7110d6ea69af7afa33f7ba054fdeb6672961669628858cc1ed3c4",
+          "revision": "mean-only-inset-20261016"
+        },
+        {
+          "original": "prepare.sh",
+          "source": "scripts/build/computation_prepare.sh",
+          "sha256": "b1b5ce045de2757b48a4662e61ad1b74f86e977d2afea70b87e6547f91894aec"
+        },
+        {
+          "original": "README_CN.md",
+          "source": "README/COMPUTATION_CN.md",
+          "sha256": "510e510a34c8cf20a8417082a5bad54797fb45c9204075e835d8bc202431cd35",
+          "packaging_original_sha256": "16e94c5bec23717f7ac1e3777b79a1b983c3f003413052d83884ee06bdcd8a3a"
+        },
+        {
+          "original": "resources.py",
+          "source": "experiments/shared/resources.py",
+          "sha256": "726c551991f6afc74a09d8f3e415289675c8e6e094802face847aa8427bb064f"
+        },
+        {
+          "original": "run.sh",
+          "source": "scripts/run/computation.sh",
+          "sha256": "3efbe52c10002fcfabb65f3389ebc89bb05e9c7ab7cf4da11f6aa65cf6b98c50"
+        },
+        {
+          "original": "runner.py",
+          "source": "experiments/computation.py",
+          "sha256": "424c0844344b0b270263886d114152f8ed752363d5958d522ac141eb8c64b545"
+        },
+        {
+          "original": "status.sh",
+          "source": "scripts/monitor/computation.sh",
+          "sha256": "3076b7af9d643ee303a72792d2e389bcafb39c66872ab6a5dc605818b94e6942"
+        },
+        {
+          "original": "support/fixtures/opa.log",
+          "source": "tests/computation/fixtures/opa.log",
+          "sha256": "43cba50b3a40409ca0c1e50f7208e9a7f043efc52d9b81efc47f9d4f4faefbef"
+        },
+        {
+          "original": "support/fixtures/osa.log",
+          "source": "tests/computation/fixtures/osa.log",
+          "sha256": "9c24294e52a075874d5a1afd21f259423ca98ee870b9b74fbadf74980cd8c4bb"
+        },
+        {
+          "original": "support/fixtures/tacita.json",
+          "source": "tests/computation/fixtures/tacita.json",
+          "sha256": "7418e61d09d51e62ef7375f7e0726e928455c513077c2a17ca3eac4a1950d8b0"
+        },
+        {
+          "original": "support/fixtures/willow.log",
+          "source": "tests/computation/fixtures/willow.log",
+          "sha256": "8d619ddc662d60fb573970c1833a841c9f0239e71db1fda9e7410894f7dfd821"
+        },
+        {
+          "original": "support/suite.py",
+          "source": "experiments/shared/paper_suite.py",
+          "sha256": "23c8c4a617128af26e8e9182bb777a4f10ff9ede3e88e097e60383c132a10d1c"
+        },
+        {
+          "original": "tacita_worker.py",
+          "source": "experiments/tacita_worker.py",
+          "sha256": "3b07b206bfd2034191e31fcde426caeee227f5233a73ca8106e922098c471c91"
+        },
+        {
+          "original": "tests/test_retest.py",
+          "source": "tests/computation/test_retest.py",
+          "sha256": "3c7ceca45a94c3871ec1f89dc858a888786bb43c0f475b9ae29063d73c81df57"
+        }
+      ]
+    }
+  },
+  "excluded_generated_files": {
+    "paper": [
+      "scripts/__pycache__/plot.cpython-313.pyc",
+      "scripts/__pycache__/suite.cpython-312.pyc",
+      "scripts/__pycache__/suite.cpython-313.pyc",
+      "tests/__pycache__/test_plots.cpython-313.pyc",
+      "tests/__pycache__/test_suite.cpython-312.pyc",
+      "tests/__pycache__/test_suite.cpython-313.pyc"
+    ],
+    "computation": []
+  },
+  "plot_revision": {
+    "id": "mean-only-inset-20261016",
+    "protocol_or_timing_changes": false
+  },
+  "packaging": {
+    "id": "final-code-package",
+    "excluded_documents": {
+      "paper": [
+        "LOCAL_VALIDATION.md",
+        "project/source/opa-secure-aggregation/CONTRIBUTING.md",
+        "project/source/opa-secure-aggregation/SECURITY.md",
+        "project/source/secure-aggregation-main/CONTRIBUTING.md",
+        "project/source/secure-aggregation-main/SECURITY.md",
+        "project/THIRD_PARTY.md",
+        "tacita/FIG7_ALIGNMENT.md",
+        "tacita/IMPLEMENTATION_NOTES.md",
+        "tacita/VALIDATION.md"
+      ],
+      "computation": [
+        "LOCAL_VALIDATION.md"
+      ]
+    },
+    "historical_data": {
+      "paper": 336,
+      "computation": 48
+    },
+    "protocol_or_timing_changes": false
+  }
+}

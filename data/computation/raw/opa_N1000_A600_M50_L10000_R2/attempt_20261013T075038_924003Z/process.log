@@ -1,0 +1,24 @@
+[client timing] stage=serial phase=warmup sample=1 seconds=0.885729
+[client timing] stage=serial phase=warmup sample=2 seconds=0.919276
+[client timing] stage=serial phase=warmup sample=3 seconds=0.843182
+[client timing] stage=serial phase=measured sample=1 seconds=0.786190
+[client timing] stage=serial phase=measured sample=2 seconds=0.745880
+[client timing] stage=serial phase=measured sample=3 seconds=0.720458
+[client timing] stage=serial phase=measured sample=4 seconds=0.719343
+[client timing] stage=serial phase=measured sample=5 seconds=0.720885
+[client timing] stage=serial phase=measured sample=6 seconds=0.725438
+[client timing] stage=serial phase=measured sample=7 seconds=0.717272
+[client timing] stage=serial phase=measured sample=8 seconds=0.699390
+[client timing] stage=serial phase=measured sample=9 seconds=0.710886
+[client timing] stage=serial phase=measured sample=10 seconds=0.710408
+[client timing] stage=serial phase=measured sample=11 seconds=0.696841
+[client timing] stage=serial phase=measured sample=12 seconds=0.695997
+[client timing] stage=serial phase=measured sample=13 seconds=0.678655
+[client timing] stage=serial phase=measured sample=14 seconds=0.677296
+[client timing] stage=serial phase=measured sample=15 seconds=0.674453
+[client timing] stage=serial phase=measured sample=16 seconds=0.693599
+[client timing] stage=serial phase=measured sample=17 seconds=0.699239
+[client timing] stage=serial phase=measured sample=18 seconds=0.680053
+[client timing] stage=serial phase=measured sample=19 seconds=0.693386
+[client timing] stage=serial phase=measured sample=20 seconds=0.696733
+protocol=OPA-LWR-full-online arithmetic_backend=fixed_q_optimized implementation_scope=figure2_flow_pke_routed_packed_shares n_clients=1000 active_clients=600 vector_len=10000 committee_size=50 threshold_r=34 seed_dim=2048 packed_secret_dim=16 packed_share_count=128 p=9007199254740992 p_log2=53 q_bits=128 stat_sec_bits=40 max_safe_aggregate_coordinate=7 bench_threads=32 setup_s=0.674189 client_compute_s=0.707120 client_observed_mean_s=0.806116 client_batch_wall_s=15.343888 committee_compute_s=0.043226 verifier_compute_s=0.000000 server_compute_s=7.741593 online_wall_s=24.558757 client_to_server_bytes=160104000 server_to_committee_bytes=43901616 committee_to_server_bytes=560048 client_bytes_mean=266840.000 committee_receive_bytes_mean=1291224.000 committee_send_bytes_mean=16472.000 committee_bytes_mean=1307696.000 server_receive_bytes=160664048 server_send_bytes=43901616 total_bytes=204565664 correctness=pass

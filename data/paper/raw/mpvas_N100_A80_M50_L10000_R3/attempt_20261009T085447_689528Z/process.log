@@ -1,0 +1,17 @@
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] SETUP PARAMETERS -> N: 100, K: 0, Dropouts: 20
+[MPVAS-UD] SETUP PARAMETERS -> N: 100, K: 0, Dropouts: 20
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] will drop out of the protocol.
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] will drop out of the protocol.
+mpvas_vector_progress=25/100
+mpvas_vector_progress=50/100
+mpvas_vector_progress=75/100
+mpvas_vector_progress=100/100
+mpvas_server_progress=25/100
+mpvas_server_progress=50/100
+mpvas_server_progress=75/100
+mpvas_server_progress=100/100
+protocol=mPVAS-UD-verification-only-real-pairing-vector curve=MNT224 security_bits=112 k=0 vector_domain_separation=per_coordinate n_clients=100 active_clients=80 dropouts=20 vector_len=10000 setup_s=0.799187 client_threads=32 warmup_coordinates_per_worker=1 repetitions=1 active_client_compute_mean_s=24.394092350 dropout_client_compute_mean_s=86.326471791 committee_compute_s=0.000000000 server_compute_s=54.821283318 verifier_compute_s=186.278795101 client_batch_wall_s=124.436427005 client_to_server_bytes=57802400 active_client_to_server_bytes=24001920 dropout_client_to_server_bytes=33800480 active_client_bytes_mean=300024.000 dropout_client_bytes_mean=1690024.000 client_to_verifier_bytes=0 server_to_verifier_bytes=2070364 committee_bytes=0 server_receive_bytes=57802400 server_send_bytes=2070364 verifier_receive_bytes=2070364 total_bytes=59872764 g1_serialized_bytes=30 gt_serialized_bytes=169 honest_correctness=pass forged_server_rejection=pass timing_scope=verification_increment_only wire=actual_charm_compressed_binary_without_base64_transport

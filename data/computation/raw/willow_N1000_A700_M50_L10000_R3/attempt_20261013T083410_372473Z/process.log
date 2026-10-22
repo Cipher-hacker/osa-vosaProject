@@ -1,0 +1,24 @@
+[client timing] stage=serial phase=warmup sample=1 seconds=0.360914
+[client timing] stage=serial phase=warmup sample=2 seconds=0.390844
+[client timing] stage=serial phase=warmup sample=3 seconds=0.362830
+[client timing] stage=serial phase=measured sample=1 seconds=0.370064
+[client timing] stage=serial phase=measured sample=2 seconds=0.338345
+[client timing] stage=serial phase=measured sample=3 seconds=0.321148
+[client timing] stage=serial phase=measured sample=4 seconds=0.334751
+[client timing] stage=serial phase=measured sample=5 seconds=0.341568
+[client timing] stage=serial phase=measured sample=6 seconds=0.335978
+[client timing] stage=serial phase=measured sample=7 seconds=0.352482
+[client timing] stage=serial phase=measured sample=8 seconds=0.337274
+[client timing] stage=serial phase=measured sample=9 seconds=0.377401
+[client timing] stage=serial phase=measured sample=10 seconds=0.358343
+[client timing] stage=serial phase=measured sample=11 seconds=0.371071
+[client timing] stage=serial phase=measured sample=12 seconds=0.347259
+[client timing] stage=serial phase=measured sample=13 seconds=0.381305
+[client timing] stage=serial phase=measured sample=14 seconds=0.449923
+[client timing] stage=serial phase=measured sample=15 seconds=0.425875
+[client timing] stage=serial phase=measured sample=16 seconds=0.363897
+[client timing] stage=serial phase=measured sample=17 seconds=0.380592
+[client timing] stage=serial phase=measured sample=18 seconds=0.386312
+[client timing] stage=serial phase=measured sample=19 seconds=0.369234
+[client timing] stage=serial phase=measured sample=20 seconds=0.398205
+protocol=Willow-paper-full-online implementation_scope=fig3_fig4_fig5_prg_seed_aux_threshold_key_recovery n_clients=1000 active_clients=700 vector_len=10000 committee_size=50 threshold_t=40 bench_threads=32 setup_s=0.714150 client_compute_s=0.367051 client_observed_mean_s=0.540411 client_batch_wall_s=14.234699 committee_compute_s=0.231053 committee_aux_share_serialize_s=0.000020 verifier_compute_s=138.214790 server_compute_s=13.358234 server_aux_key_reconstruction_s=0.025604 server_seed_decryption_s=0.035586 server_mask_expansion_s=0.053388 server_mask_accumulation_s=0.001500 server_final_recovery_s=0.023268 online_wall_s=175.400820 client_to_server_bytes=895925800 server_to_verifier_bytes=692234200 verifier_to_committee_bytes=3933600 committee_to_server_bytes=3998880 client_bytes_mean=1279894.000 committee_bytes_mean=198312.000 server_receive_bytes=899924680 server_send_bytes=696167800 verifier_receive_bytes=692234200 verifier_send_bytes=3933600 total_bytes=1596092480 correctness=pass

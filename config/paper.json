@@ -1,0 +1,16 @@
+{
+  "schema": "paper-cpu-v1",
+  "threads": 32,
+  "repeats": 3,
+  "n_clients": 1000,
+  "committee_size": 50,
+  "dropout_percent": 20,
+  "vector_len": 10000,
+  "n_values": [100, 200, 400, 600, 800, 1000],
+  "m_values": [20, 40, 60, 80, 100],
+  "lengths": [10000, 20000, 40000, 60000, 80000, 100000],
+  "dropout_values": [0, 10, 20, 30],
+  "timeout_seconds": 172800,
+  "min_free_disk_gib": 20,
+  "plot_y_scale": "linear"
+}

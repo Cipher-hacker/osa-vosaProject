@@ -1,0 +1,41 @@
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] SETUP PARAMETERS -> N: 400, K: 0, Dropouts: 80
+[MPVAS-UD] SETUP PARAMETERS -> N: 400, K: 0, Dropouts: 80
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79] will drop out of the protocol.
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79] will drop out of the protocol.
+mpvas_vector_progress=25/400
+mpvas_vector_progress=50/400
+mpvas_vector_progress=75/400
+mpvas_vector_progress=100/400
+mpvas_vector_progress=125/400
+mpvas_vector_progress=150/400
+mpvas_vector_progress=175/400
+mpvas_vector_progress=200/400
+mpvas_vector_progress=225/400
+mpvas_vector_progress=250/400
+mpvas_vector_progress=275/400
+mpvas_vector_progress=300/400
+mpvas_vector_progress=325/400
+mpvas_vector_progress=350/400
+mpvas_vector_progress=375/400
+mpvas_vector_progress=400/400
+mpvas_server_progress=25/400
+mpvas_server_progress=50/400
+mpvas_server_progress=75/400
+mpvas_server_progress=100/400
+mpvas_server_progress=125/400
+mpvas_server_progress=150/400
+mpvas_server_progress=175/400
+mpvas_server_progress=200/400
+mpvas_server_progress=225/400
+mpvas_server_progress=250/400
+mpvas_server_progress=275/400
+mpvas_server_progress=300/400
+mpvas_server_progress=325/400
+mpvas_server_progress=350/400
+mpvas_server_progress=375/400
+mpvas_server_progress=400/400
+protocol=mPVAS-UD-verification-only-real-pairing-vector curve=MNT224 security_bits=112 k=0 vector_domain_separation=per_coordinate n_clients=400 active_clients=320 dropouts=80 vector_len=10000 setup_s=2.188397 client_threads=32 warmup_coordinates_per_worker=1 repetitions=1 active_client_compute_mean_s=19.549601898 dropout_client_compute_mean_s=66.357698599 committee_compute_s=0.000000000 server_compute_s=140.957810096 verifier_compute_s=130.094699062 client_batch_wall_s=367.584918693 client_to_server_bytes=231209600 active_client_to_server_bytes=96007680 dropout_client_to_server_bytes=135201920 active_client_bytes_mean=300024.000 dropout_client_bytes_mean=1690024.000 client_to_verifier_bytes=0 server_to_verifier_bytes=2071324 committee_bytes=0 server_receive_bytes=231209600 server_send_bytes=2071324 verifier_receive_bytes=2071324 total_bytes=233280924 g1_serialized_bytes=30 gt_serialized_bytes=169 honest_correctness=pass forged_server_rejection=pass timing_scope=verification_increment_only wire=actual_charm_compressed_binary_without_base64_transport

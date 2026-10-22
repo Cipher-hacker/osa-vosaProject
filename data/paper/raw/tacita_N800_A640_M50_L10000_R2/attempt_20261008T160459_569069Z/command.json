@@ -1,0 +1,41 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/.runtime/python/bin/python",
+    "-u",
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/tacita/scripts/run.py",
+    "formal",
+    "--implementation",
+    "fig7-batched-v2",
+    "--n-clients",
+    "800",
+    "--active-clients",
+    "640",
+    "--committee-size",
+    "50",
+    "--threshold",
+    "40",
+    "--vector-len",
+    "10000",
+    "--threads",
+    "32",
+    "--slots",
+    "1",
+    "--repeats",
+    "1",
+    "--output-root",
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/runs/paper_20261008T120320_083726Z/raw/tacita_N800_A640_M50_L10000_R2/attempt_20261008T160459_569069Z/ste",
+    "--kahe-bridge",
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/tacita/bin/kahe_stage_fig7_v2"
+  ],
+  "cwd": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/tacita",
+  "job": {
+    "protocol": "tacita",
+    "n": 800,
+    "active": 640,
+    "m": 50,
+    "length": 10000,
+    "repeat": 2
+  },
+  "utc_started": "2026-10-08T16:04:59.570954+00:00",
+  "controlled_env": {}
+}

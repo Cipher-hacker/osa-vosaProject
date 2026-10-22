@@ -1,0 +1,6 @@
+command=/root/autodl-tmp/OSA_VOSA_Project_Final/source/secure-aggregation-main/bazel-bin/willow/benches/run_willow_paper_full_unified
+driver_wall_s=380.028249
+returncode=0
+--- stdout ---
+protocol=Willow-paper-full-online implementation_scope=fig3_fig4_fig5_prg_seed_aux_threshold_key_recovery n_clients=1000 active_clients=800 vector_len=10000 committee_size=50 threshold_t=40 bench_threads=32 setup_s=0.987196 client_compute_s=0.681450 client_observed_mean_s=0.776657 client_batch_wall_s=19.982048 committee_compute_s=0.460270 committee_aux_share_serialize_s=0.000039 verifier_compute_s=311.833355 server_compute_s=27.812202 server_aux_key_reconstruction_s=0.039998 server_seed_decryption_s=0.073052 server_mask_expansion_s=0.137469 server_mask_accumulation_s=0.004105 server_final_recovery_s=0.047797 online_wall_s=378.334893 client_to_server_bytes=1023915200 server_to_verifier_bytes=791124800 verifier_to_committee_bytes=3933600 committee_to_server_bytes=3998880 client_bytes_mean=1279894.000 committee_bytes_mean=198312.000 server_receive_bytes=1027914080 server_send_bytes=795058400 verifier_receive_bytes=791124800 verifier_send_bytes=3933600 total_bytes=1822972480 correctness=pass
+--- stderr ---

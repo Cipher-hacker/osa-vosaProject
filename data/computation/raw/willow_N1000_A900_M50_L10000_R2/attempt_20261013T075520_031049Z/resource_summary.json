@@ -1,0 +1,9 @@
+{
+  "sample_count": 120,
+  "interval_seconds": 2,
+  "peak_sampled_process_group_rss_bytes": 2648551424,
+  "peak_sampled_process_group_swap_kib": 0,
+  "exit_code": 0,
+  "elapsed_seconds": 234.9047009497881,
+  "limitations": "Periodic samples can miss peaks. Summed RSS can double-count shared pages. Host and cgroup counters can include other jobs. Missing fields mean unavailable, not zero."
+}

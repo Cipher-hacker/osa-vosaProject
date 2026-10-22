@@ -1,0 +1,32 @@
+starting STE: active=700 committee=50 threshold=40 slots=1 threads=32
+[fig7] setup: fixed_key_coordinates=8192 threads=32
+[client timing] stage=serial phase=warmup sample=1 seconds=21.898460
+[client timing] stage=serial phase=warmup sample=2 seconds=21.668703
+[client timing] stage=serial phase=warmup sample=3 seconds=21.583964
+[client timing] stage=serial phase=measured sample=1 seconds=22.244707
+[client timing] stage=serial phase=measured sample=2 seconds=23.301970
+[client timing] stage=serial phase=measured sample=3 seconds=21.704922
+[client timing] stage=serial phase=measured sample=4 seconds=23.881011
+[client timing] stage=serial phase=measured sample=5 seconds=24.332179
+[client timing] stage=serial phase=measured sample=6 seconds=24.464916
+[client timing] stage=serial phase=measured sample=7 seconds=22.966541
+[client timing] stage=serial phase=measured sample=8 seconds=23.686601
+[client timing] stage=serial phase=measured sample=9 seconds=23.710603
+[client timing] stage=serial phase=measured sample=10 seconds=26.141172
+[client timing] stage=serial phase=measured sample=11 seconds=25.812068
+[client timing] stage=serial phase=measured sample=12 seconds=28.573563
+[client timing] stage=serial phase=measured sample=13 seconds=29.092718
+[client timing] stage=serial phase=measured sample=14 seconds=24.240184
+[client timing] stage=serial phase=measured sample=15 seconds=22.864218
+[client timing] stage=serial phase=measured sample=16 seconds=21.779067
+[client timing] stage=serial phase=measured sample=17 seconds=22.117315
+[client timing] stage=serial phase=measured sample=18 seconds=22.648203
+[client timing] stage=serial phase=measured sample=19 seconds=23.445434
+[client timing] stage=serial phase=measured sample=20 seconds=22.129676
+[fig7] client batch starting; setup_s=42.896
+[fig7] checked deserialization and aggregation; client_batch_s=728.764
+[fig7] committee; parse_aggregate_s=397.778
+[fig7] aggregate key recovery; seed_recovery_s=8.413
+[fig7] STE correctness=pass; KAHE finalization still required by driver
+protocol="TACITA-STE-Fig7-v2" active_clients=700 online_wall_s=1171.595448817 correctness=pass
+results=/root/autodl-tmp/OSA_Computation_Retest_20261013/runs/computation_20261013T035420_038778Z/raw/tacita_N1000_A700_M50_L10000_R3/attempt_20261013T083715_064620Z/ste/metrics.json

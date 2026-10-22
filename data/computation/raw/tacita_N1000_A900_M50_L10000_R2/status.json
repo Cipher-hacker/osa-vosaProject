@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "attempt": "attempt_20261013T075914_951458Z",
+  "utc_finished": "2026-10-13T08:34:10.364130+00:00",
+  "driver_wall_s": 2095.4024831578135,
+  "evidence_sha256": {
+    "client_samples/kahe.json": "a3bdd150903c7d095567d1f56da17425ed30a72313a97202f656f83108f9a41e",
+    "client_samples/ste.json": "4e7f9588dc18f548ca735261a8dd5b17e4bceb1f7a8d9c6f7b4c1eaa73a1c820",
+    "command.json": "24baba941c271c2df660de7b993d1b35440e3ee6e29d85eb334b4c132743ad8b",
+    "pid.json": "debfb67cff07e6c57c697061c4603178fe2925d02f28bbc817d7a7b9084cc0a1",
+    "process.log": "645410b9089d279519a6512de5f16490c7c9c6db8be8940cf13619f31977f37f",
+    "resource_summary.json": "21c10688a2fd77c40219c9dbd8f324e81810df67b92ac6eed25108fc0ea89ab6",
+    "resources.jsonl": "fdbb1a0d86d620c61a5a31171c813aad767b5c37d63584efd1d5c087a95046b2",
+    "row.json": "6855eb412db661292f97ad0d5f770058502b6db6668ce0440166e4413f518f30",
+    "ste/bridge.log": "d4715673d98e56ae94450e05af8880921f444beed9a4390ea025b2edc9027cbd",
+    "ste/metrics.json": "ad49305463d1648ae5abd77fe6dceec8c8ac2fe540841572ef10e5ed7988ef1f",
+    "ste/seed-generation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ste/status.json": "58e52b72c2dd4d500c7e497141c3e211b36bfc45d7260db11d4303cb2d15e916",
+    "ste/training-free-benchmark.log": "2885a9a0eeab3d69b8d4aee5f4042935e5ba6454012f55c8e5012a3970644119"
+  }
+}

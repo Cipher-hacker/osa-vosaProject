@@ -1,0 +1,89 @@
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] SETUP PARAMETERS -> N: 1000, K: 0, Dropouts: 200
+[MPVAS-UD] SETUP PARAMETERS -> N: 1000, K: 0, Dropouts: 200
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199] will drop out of the protocol.
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199] will drop out of the protocol.
+mpvas_vector_progress=25/1000
+mpvas_vector_progress=50/1000
+mpvas_vector_progress=75/1000
+mpvas_vector_progress=100/1000
+mpvas_vector_progress=125/1000
+mpvas_vector_progress=150/1000
+mpvas_vector_progress=175/1000
+mpvas_vector_progress=200/1000
+mpvas_vector_progress=225/1000
+mpvas_vector_progress=250/1000
+mpvas_vector_progress=275/1000
+mpvas_vector_progress=300/1000
+mpvas_vector_progress=325/1000
+mpvas_vector_progress=350/1000
+mpvas_vector_progress=375/1000
+mpvas_vector_progress=400/1000
+mpvas_vector_progress=425/1000
+mpvas_vector_progress=450/1000
+mpvas_vector_progress=475/1000
+mpvas_vector_progress=500/1000
+mpvas_vector_progress=525/1000
+mpvas_vector_progress=550/1000
+mpvas_vector_progress=575/1000
+mpvas_vector_progress=600/1000
+mpvas_vector_progress=625/1000
+mpvas_vector_progress=650/1000
+mpvas_vector_progress=675/1000
+mpvas_vector_progress=700/1000
+mpvas_vector_progress=725/1000
+mpvas_vector_progress=750/1000
+mpvas_vector_progress=775/1000
+mpvas_vector_progress=800/1000
+mpvas_vector_progress=825/1000
+mpvas_vector_progress=850/1000
+mpvas_vector_progress=875/1000
+mpvas_vector_progress=900/1000
+mpvas_vector_progress=925/1000
+mpvas_vector_progress=950/1000
+mpvas_vector_progress=975/1000
+mpvas_vector_progress=1000/1000
+mpvas_server_progress=25/1000
+mpvas_server_progress=50/1000
+mpvas_server_progress=75/1000
+mpvas_server_progress=100/1000
+mpvas_server_progress=125/1000
+mpvas_server_progress=150/1000
+mpvas_server_progress=175/1000
+mpvas_server_progress=200/1000
+mpvas_server_progress=225/1000
+mpvas_server_progress=250/1000
+mpvas_server_progress=275/1000
+mpvas_server_progress=300/1000
+mpvas_server_progress=325/1000
+mpvas_server_progress=350/1000
+mpvas_server_progress=375/1000
+mpvas_server_progress=400/1000
+mpvas_server_progress=425/1000
+mpvas_server_progress=450/1000
+mpvas_server_progress=475/1000
+mpvas_server_progress=500/1000
+mpvas_server_progress=525/1000
+mpvas_server_progress=550/1000
+mpvas_server_progress=575/1000
+mpvas_server_progress=600/1000
+mpvas_server_progress=625/1000
+mpvas_server_progress=650/1000
+mpvas_server_progress=675/1000
+mpvas_server_progress=700/1000
+mpvas_server_progress=725/1000
+mpvas_server_progress=750/1000
+mpvas_server_progress=775/1000
+mpvas_server_progress=800/1000
+mpvas_server_progress=825/1000
+mpvas_server_progress=850/1000
+mpvas_server_progress=875/1000
+mpvas_server_progress=900/1000
+mpvas_server_progress=925/1000
+mpvas_server_progress=950/1000
+mpvas_server_progress=975/1000
+mpvas_server_progress=1000/1000
+protocol=mPVAS-UD-verification-only-real-pairing-vector curve=MNT224 security_bits=112 k=0 vector_domain_separation=per_coordinate n_clients=1000 active_clients=800 dropouts=200 vector_len=10000 setup_s=6.120045 client_threads=32 warmup_coordinates_per_worker=1 repetitions=1 active_client_compute_mean_s=23.144358789 dropout_client_compute_mean_s=84.096945465 committee_compute_s=0.000000000 server_compute_s=521.606110990 verifier_compute_s=173.973247074 client_batch_wall_s=1114.929940090 client_to_server_bytes=578024000 active_client_to_server_bytes=240019200 dropout_client_to_server_bytes=338004800 active_client_bytes_mean=300024.000 dropout_client_bytes_mean=1690024.000 client_to_verifier_bytes=0 server_to_verifier_bytes=2073244 committee_bytes=0 server_receive_bytes=578024000 server_send_bytes=2073244 verifier_receive_bytes=2073244 total_bytes=580097244 g1_serialized_bytes=30 gt_serialized_bytes=169 honest_correctness=pass forged_server_rejection=pass timing_scope=verification_increment_only wire=actual_charm_compressed_binary_without_base64_transport

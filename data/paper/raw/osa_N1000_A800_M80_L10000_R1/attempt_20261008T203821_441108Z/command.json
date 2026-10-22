@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/bin/osa"
+  ],
+  "cwd": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008",
+  "job": {
+    "protocol": "osa",
+    "n": 1000,
+    "active": 800,
+    "m": 80,
+    "length": 10000,
+    "repeat": 1
+  },
+  "utc_started": "2026-10-08T20:38:21.443261+00:00",
+  "controlled_env": {
+    "BENCH_N_CLIENTS": "1000",
+    "BENCH_ACTIVE_CLIENTS": "800",
+    "BENCH_VECTOR_LEN": "10000",
+    "BENCH_COMMITTEE_SIZE": "80",
+    "BENCH_THRESHOLD": "64",
+    "BENCH_THREADS": "32",
+    "BENCH_OSA_PROFILE": "compact_seeded",
+    "BENCH_RSS_SECRET_DIM": "54",
+    "BENCH_OSA_DIGEST_MASK_MODE": "shake256_xof",
+    "BENCH_OSA_AUX_ENCRYPTION_MODE": "ind_cpa_shake256"
+  }
+}

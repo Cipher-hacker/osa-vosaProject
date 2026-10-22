@@ -1,0 +1,3880 @@
+{
+  "contract": {
+    "version": "paper-cpu-v1",
+    "config": {
+      "schema": "paper-cpu-v1",
+      "threads": 32,
+      "repeats": 3,
+      "n_clients": 1000,
+      "committee_size": 50,
+      "dropout_percent": 20,
+      "vector_len": 10000,
+      "n_values": [
+        100,
+        200,
+        400,
+        600,
+        800,
+        1000
+      ],
+      "m_values": [
+        20,
+        40,
+        60,
+        80,
+        100
+      ],
+      "lengths": [
+        10000,
+        20000,
+        40000,
+        60000,
+        80000,
+        100000
+      ],
+      "dropout_values": [
+        0,
+        10,
+        20,
+        30
+      ],
+      "timeout_seconds": 172800,
+      "min_free_disk_gib": 20,
+      "plot_y_scale": "linear"
+    },
+    "scope": "all",
+    "smoke": false,
+    "host": {
+      "host": "autodl-container-74aa40adc6-759fc565",
+      "platform": "Linux-5.15.0-117-generic-x86_64-with-glibc2.35",
+      "cpu_model": "Intel(R) Xeon(R) Platinum 8352V CPU @ 2.10GHz",
+      "available_cpus": 32,
+      "python": "3.10.8",
+      "source_sha256": "53dcb4c36573f9ae23ae547b37dd090bb85abca3636c601e1fbef569b8afe388",
+      "binary_sha256": {
+        "kahe": "7dc4f64cf636cbda1452e3d330781176f58f38e66a682e21cc01637b77a6e8b6",
+        "mpvas": "75a285a2f77914d6ab6e21aa5d71afa805742aa2201b730eae182c12348fd124",
+        "opa": "594821f73d406ff597714556f45e5c27fa3920a2749fc022af5e47e6659c1797",
+        "osa": "51ba828fc8f084e1ba6bed54fde2e1185327ec27ebf811ad2c1613d3f19a4bde",
+        "tacita": "f195472b8773693b7cc4a5d3ba570715660aabeab173daf35764ca9a3f924e46",
+        "vosa": "0bea6a384ac8d182b0a88dac7a3fc79533a7608f0709f20c1e43f471d172c62c",
+        "willow": "970fb2e3b09daf5e34575d97fa5bb521e6236e6cb6171eb02b6b0fd8df007222"
+      },
+      "runtime_sha256": {
+        ".runtime/mpvas-real/src/charm/charm/core/benchmark.cpython-310-x86_64-linux-gnu.so": "259d3e9392d54bb6b0e1bf8a623dcb1d1a5e17c7b1c0322eec6edfea6409af49",
+        ".runtime/mpvas-real/src/charm/charm/core/crypto/cryptobase.cpython-310-x86_64-linux-gnu.so": "bf97e46873b6fb80486571535a91dd8bbed0f3e43e2caa8a200fde7d1afad192",
+        ".runtime/mpvas-real/src/charm/charm/core/crypto/AES.cpython-310-x86_64-linux-gnu.so": "7f28cc389324cab460489cbaba5c7b2119dc5aaaf963a10c0eb703851a60aea5",
+        ".runtime/mpvas-real/src/charm/charm/core/crypto/DES.cpython-310-x86_64-linux-gnu.so": "9f85bce87726c22349a6bed58226b289a6c00bd6bd7a6d8a85b971fbb84109e6",
+        ".runtime/mpvas-real/src/charm/charm/core/crypto/DES3.cpython-310-x86_64-linux-gnu.so": "ba94da408ea2199adca4fa84aab3def31a18d2cba4908c4675c6e5b30caa0ee9",
+        ".runtime/mpvas-real/src/charm/charm/core/math/pairing.cpython-310-x86_64-linux-gnu.so": "bceccdcd0e234f5226651ae2d3ed417f7698bb289a40f0436c14e71f1cf101f2",
+        ".runtime/mpvas-real/src/charm/charm/core/math/integer.cpython-310-x86_64-linux-gnu.so": "267d2aa442df5e613e2a1d323e2d38f493fba35ba1c19c3ff9c518cf344fecda",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/benchmark.cpython-310-x86_64-linux-gnu.so": "259d3e9392d54bb6b0e1bf8a623dcb1d1a5e17c7b1c0322eec6edfea6409af49",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/math/pairing.cpython-310-x86_64-linux-gnu.so": "bceccdcd0e234f5226651ae2d3ed417f7698bb289a40f0436c14e71f1cf101f2",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/math/integer.cpython-310-x86_64-linux-gnu.so": "267d2aa442df5e613e2a1d323e2d38f493fba35ba1c19c3ff9c518cf344fecda",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/crypto/cryptobase.cpython-310-x86_64-linux-gnu.so": "bf97e46873b6fb80486571535a91dd8bbed0f3e43e2caa8a200fde7d1afad192",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/crypto/AES.cpython-310-x86_64-linux-gnu.so": "7f28cc389324cab460489cbaba5c7b2119dc5aaaf963a10c0eb703851a60aea5",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/crypto/DES.cpython-310-x86_64-linux-gnu.so": "9f85bce87726c22349a6bed58226b289a6c00bd6bd7a6d8a85b971fbb84109e6",
+        ".runtime/mpvas-real/src/charm/build/lib.linux-x86_64-cpython-310/charm/core/crypto/DES3.cpython-310-x86_64-linux-gnu.so": "ba94da408ea2199adca4fa84aab3def31a18d2cba4908c4675c6e5b30caa0ee9",
+        ".runtime/mpvas-real/pbc/lib/libpbc.so.1.0.0": "6802da779b3929744e669aed60af3a6be5909a592857fb7c4efde6c5574f0bde",
+        ".runtime/mpvas-real/pbc/lib/libpbc.so.1": "6802da779b3929744e669aed60af3a6be5909a592857fb7c4efde6c5574f0bde",
+        ".runtime/mpvas-real/pbc/lib/libpbc.so": "6802da779b3929744e669aed60af3a6be5909a592857fb7c4efde6c5574f0bde"
+      },
+      "mem_total_kib": "263726824"
+    },
+    "jobs": [
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "main",
+          "n",
+          "length",
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "main",
+          "n",
+          "length",
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "main",
+          "n",
+          "length",
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "main",
+          "n",
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "n"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 20,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 40,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 60,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 80,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 100,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "m"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 20000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 40000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 60000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 80000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 1,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 2,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 100000,
+        "repeat": 3,
+        "groups": [
+          "length"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 1000,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 1000,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 1000,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 100,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 100,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 100,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 200,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 200,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 200,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 400,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 400,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 400,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 90,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 90,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 90,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 180,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 180,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 180,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 360,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 360,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 360,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 540,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 540,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 540,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 720,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 720,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 720,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_dropout",
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 70,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 70,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 100,
+        "active": 70,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 140,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 140,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 200,
+        "active": 140,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 280,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 280,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 400,
+        "active": 280,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 420,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 420,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 600,
+        "active": 420,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 560,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 560,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "osa",
+        "n": 800,
+        "active": 560,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "osa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_main",
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_main",
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_main",
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_main",
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_main",
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_main",
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 100,
+        "active": 80,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 200,
+        "active": 160,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 400,
+        "active": 320,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 600,
+        "active": 480,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n",
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "mpvas",
+        "n": 800,
+        "active": 640,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "verification_n"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 100,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 100,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 100,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 200,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 200,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 200,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 400,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 400,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 400,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 1000,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 1000,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 1000,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 90,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 90,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 90,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 180,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 180,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 180,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 360,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 360,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 360,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 540,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 540,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 540,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 720,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 720,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 720,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 70,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 70,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 100,
+        "active": 70,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 140,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 140,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 200,
+        "active": 140,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 280,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 280,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 400,
+        "active": 280,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 420,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 420,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 600,
+        "active": 420,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 560,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 560,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 800,
+        "active": 560,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2,
+        "groups": [
+          "vosa_grid"
+        ]
+      },
+      {
+        "protocol": "vosa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3,
+        "groups": [
+          "vosa_grid"
+        ]
+      }
+    ]
+  },
+  "utc_started": "2026-10-08T12:03:20.083956+00:00",
+  "limitations": [
+    "No real FL training, datasets, global model download or accuracy plots.",
+    "OSA is the existing Compact/SeededDigest/RSS31 benchmark, not silently changed to faithful mode.",
+    "TACITA is an independent Fig7-batched-v2 STE+KAHE ablation without MKLHTS/input soundness, not author code.",
+    "Native security parameters, input encodings and message framing differ. No equal-security certification.",
+    "All communication counts sent messages once per directed online hop; received bytes are not added.",
+    "Server forwarding is a separate transmitted hop. The existing routing is retained.",
+    "Setup distribution/public parameters and transport headers/retransmissions are excluded.",
+    "Client metric is mean sent bytes per active client; committee metric is mean per actual responder.",
+    "mPVAS dropouts still send recovery messages; include these in system total, not in active-client mean.",
+    "Willow verifier sends are included in system total even if not a standalone plotted role.",
+    "VOSA/mPVAS plots are verification-only increments, not full aggregation comparisons.",
+    "mPVAS uses real MNT224 pairing at recorded 112-bit security; not equal to the VOSA security target.",
+    "mPVAS vector extension executes the released scalar verification equation separately per coordinate.",
+    "STE online_wall_s is a stage sum with serial KAHE clients. Do not compare it as a fused parallel wall time.",
+    "Times are native role computation in seconds, not network latency. Repeats are independent executions.",
+    "Functional correctness and selected negative tests are not a security proof."
+  ]
+}

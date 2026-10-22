@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/bin/willow"
+  ],
+  "cwd": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008",
+  "job": {
+    "protocol": "willow",
+    "n": 1000,
+    "active": 800,
+    "m": 50,
+    "length": 20000,
+    "repeat": 3
+  },
+  "utc_started": "2026-10-09T00:14:44.593122+00:00",
+  "controlled_env": {
+    "BENCH_N_CLIENTS": "1000",
+    "BENCH_ACTIVE_CLIENTS": "800",
+    "BENCH_VECTOR_LEN": "20000",
+    "BENCH_COMMITTEE_SIZE": "50",
+    "BENCH_THRESHOLD": "40",
+    "BENCH_THREADS": "32"
+  }
+}

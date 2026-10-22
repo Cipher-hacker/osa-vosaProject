@@ -1,0 +1,41 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Computation_Retest_20261013/bin/osa"
+  ],
+  "job": {
+    "protocol": "osa",
+    "n": 1000,
+    "active": 900,
+    "m": 50,
+    "length": 10000,
+    "repeat": 3
+  },
+  "config": {
+    "version": "dropout-computation-warmed-v1",
+    "threads": 32,
+    "repeats": 3,
+    "client_warmup": 3,
+    "client_samples": 20,
+    "timeout_seconds": 43200,
+    "resource_interval_seconds": 2,
+    "min_free_disk_gib": 20,
+    "client_timing_scope": "serial operation and serialization after same-process warmup; setup excluded",
+    "tacita_client_scope": "mean(STE samples) + mean(KAHE samples); not fused wall time"
+  },
+  "utc_started": "2026-10-13T09:37:45.549424+00:00",
+  "controlled_env": {
+    "BENCH_N_CLIENTS": "1000",
+    "BENCH_ACTIVE_CLIENTS": "900",
+    "BENCH_COMMITTEE_SIZE": "50",
+    "BENCH_THRESHOLD": "40",
+    "BENCH_VECTOR_LEN": "10000",
+    "BENCH_THREADS": "32",
+    "BENCH_CLIENT_WARMUP": "3",
+    "BENCH_CLIENT_SAMPLES": "20",
+    "BENCH_CLIENT_TIMING_DIR": "/root/autodl-tmp/OSA_Computation_Retest_20261013/runs/computation_20261013T035420_038778Z/raw/osa_N1000_A900_M50_L10000_R3/attempt_20261013T093745_548539Z/client_samples",
+    "BENCH_OSA_PROFILE": "compact_seeded",
+    "BENCH_RSS_SECRET_DIM": "30",
+    "BENCH_OSA_DIGEST_MASK_MODE": "shake256_xof",
+    "BENCH_OSA_AUX_ENCRYPTION_MODE": "ind_cpa_shake256"
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "contract": {
+    "config": {
+      "version": "dropout-computation-warmed-v1",
+      "threads": 32,
+      "repeats": 3,
+      "client_warmup": 3,
+      "client_samples": 20,
+      "timeout_seconds": 43200,
+      "resource_interval_seconds": 2,
+      "min_free_disk_gib": 20,
+      "client_timing_scope": "serial operation and serialization after same-process warmup; setup excluded",
+      "tacita_client_scope": "mean(STE samples) + mean(KAHE samples); not fused wall time"
+    },
+    "jobs": [
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 1
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 2
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 700,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 600,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 900,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "opa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "willow",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "tacita",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      },
+      {
+        "protocol": "osa",
+        "n": 1000,
+        "active": 800,
+        "m": 50,
+        "length": 10000,
+        "repeat": 3
+      }
+    ],
+    "smoke": false,
+    "host": {
+      "host": "autodl-container-74aa40adc6-759fc565",
+      "cpu_model": "Intel(R) Xeon(R) Platinum 8352V CPU @ 2.10GHz",
+      "available_cpus": 32,
+      "platform": "Linux-5.15.0-117-generic-x86_64-with-glibc2.35",
+      "python": "3.10.8",
+      "base": "/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008",
+      "addon_sha256": "82f6df509a4607118411d40c2fcc5d060cf44ff2452c87c4c6230b8d713d3c16",
+      "base_inventory_sha256": "e39074a10555ee5fb912e69cd46a5265257f5108492b38f38d465d16e1dc99b7",
+      "instrumented_inventory_sha256": "c6c366d5d32477ecba1c5b4067892949673157f584d33ed79b7b64f9ffbee7e6",
+      "dependency_lock_manifest_sha256": "1f09de07f3d29a9c558aa836ff17694e1fb72ebf489244bbb62f19751ac9b9d6",
+      "binary_sha256": {
+        "osa": "364a751f9f186d21453ea1c6d0a1c0b59747a9c0ab3b718dd58dd3b07628e51a",
+        "opa": "8f843924d4c8f4201cfe37636adf4154e2b718b87e2011b265e0978aa2ea649c",
+        "willow": "cd04f6b9f17af17c051977aecf3325f482db28178f62f0ca890d5bedb4face35",
+        "tacita": "5d4986c2b0ed156df7e4da381c78cddf138909a39298ee642596e0ddaf7af738",
+        "kahe": "3aade632948815224714846e18440e01568a5abb76aed1a48b7de70e730f9b54"
+      },
+      "instrumentation_diff_sha256": "501f03458953751be5fb3fb0d4d4c0578e5bc21614c846e9b6a48f8edf8a70ad"
+    }
+  },
+  "utc_started": "2026-10-13T03:54:20.038991+00:00"
+}

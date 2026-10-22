@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/root/autodl-tmp/OSA_Computation_Retest_20261013/bin/opa"
+  ],
+  "job": {
+    "protocol": "opa",
+    "n": 1000,
+    "active": 900,
+    "m": 50,
+    "length": 10000,
+    "repeat": 2
+  },
+  "config": {
+    "version": "dropout-computation-warmed-v1",
+    "threads": 32,
+    "repeats": 3,
+    "client_warmup": 3,
+    "client_samples": 20,
+    "timeout_seconds": 43200,
+    "resource_interval_seconds": 2,
+    "min_free_disk_gib": 20,
+    "client_timing_scope": "serial operation and serialization after same-process warmup; setup excluded",
+    "tacita_client_scope": "mean(STE samples) + mean(KAHE samples); not fused wall time"
+  },
+  "utc_started": "2026-10-13T07:54:27.842411+00:00",
+  "controlled_env": {
+    "BENCH_N_CLIENTS": "1000",
+    "BENCH_ACTIVE_CLIENTS": "900",
+    "BENCH_COMMITTEE_SIZE": "50",
+    "BENCH_THRESHOLD": "34",
+    "BENCH_VECTOR_LEN": "10000",
+    "BENCH_THREADS": "32",
+    "BENCH_CLIENT_WARMUP": "3",
+    "BENCH_CLIENT_SAMPLES": "20",
+    "BENCH_CLIENT_TIMING_DIR": "/root/autodl-tmp/OSA_Computation_Retest_20261013/runs/computation_20261013T035420_038778Z/raw/opa_N1000_A900_M50_L10000_R2/attempt_20261013T075427_841516Z/client_samples"
+  }
+}

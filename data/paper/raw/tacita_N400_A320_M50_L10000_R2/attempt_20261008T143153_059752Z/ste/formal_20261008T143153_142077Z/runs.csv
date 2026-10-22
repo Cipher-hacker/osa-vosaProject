@@ -1,0 +1,2 @@
+protocol,n_clients,active_clients,committee_size,threshold,vector_len,repeat,slots,setup_s,client_compute_s,committee_compute_s,server_compute_s,server_dlog_s,online_wall_s,client_to_server_bytes,server_to_committee_bytes,committee_to_server_bytes,total_bytes
+TACITA-STE-Fig7-v2,400,320,50,40,10000,1,8192,39.620979077,20.94405770163125,0.556439945925,185.75138174100002,1.6106191600000002,522.782983902,1584747520,188772480,13120,1773533120

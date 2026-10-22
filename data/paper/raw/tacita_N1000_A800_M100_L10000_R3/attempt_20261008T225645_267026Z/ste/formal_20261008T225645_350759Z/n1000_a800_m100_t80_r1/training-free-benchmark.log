@@ -1,0 +1,9 @@
+starting STE: active=800 committee=100 threshold=80 slots=1 threads=32
+[fig7] setup: fixed_key_coordinates=8192 threads=32
+[fig7] client batch starting; setup_s=85.946
+[fig7] checked deserialization and aggregation; client_batch_s=771.281
+[fig7] committee; parse_aggregate_s=426.975
+[fig7] aggregate key recovery; seed_recovery_s=8.705
+[fig7] STE correctness=pass; KAHE finalization still required by driver
+protocol="TACITA-STE-Fig7-v2" active_clients=800 online_wall_s=1266.707943354 correctness=pass
+results=/root/autodl-tmp/OSA_Paper_Experiments_CPU_20261008/runs/paper_20261008T120320_083726Z/raw/tacita_N1000_A800_M100_L10000_R3/attempt_20261008T225645_267026Z/ste/formal_20261008T225645_350759Z/n1000_a800_m100_t80_r1/metrics.json

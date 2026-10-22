@@ -1,0 +1,25 @@
+[client timing] stage=serial phase=warmup sample=1 seconds=0.019236
+[client timing] stage=serial phase=warmup sample=2 seconds=0.018444
+[client timing] stage=serial phase=warmup sample=3 seconds=0.018121
+[client timing] stage=serial phase=measured sample=1 seconds=0.018079
+[client timing] stage=serial phase=measured sample=2 seconds=0.017996
+[client timing] stage=serial phase=measured sample=3 seconds=0.017993
+[client timing] stage=serial phase=measured sample=4 seconds=0.017978
+[client timing] stage=serial phase=measured sample=5 seconds=0.017801
+[client timing] stage=serial phase=measured sample=6 seconds=0.017766
+[client timing] stage=serial phase=measured sample=7 seconds=0.017745
+[client timing] stage=serial phase=measured sample=8 seconds=0.012418
+[client timing] stage=serial phase=measured sample=9 seconds=0.010417
+[client timing] stage=serial phase=measured sample=10 seconds=0.010692
+[client timing] stage=serial phase=measured sample=11 seconds=0.010405
+[client timing] stage=serial phase=measured sample=12 seconds=0.010382
+[client timing] stage=serial phase=measured sample=13 seconds=0.010351
+[client timing] stage=serial phase=measured sample=14 seconds=0.010375
+[client timing] stage=serial phase=measured sample=15 seconds=0.010275
+[client timing] stage=serial phase=measured sample=16 seconds=0.010381
+[client timing] stage=serial phase=measured sample=17 seconds=0.010369
+[client timing] stage=serial phase=measured sample=18 seconds=0.010295
+[client timing] stage=serial phase=measured sample=19 seconds=0.010309
+[client timing] stage=serial phase=measured sample=20 seconds=0.010319
+ready setup_s=0.016140704 client_mean_s=0.013117253599999998 client_serial_wall_s=7.585299066000006 server_pre_s=0.707167014 client_bytes=134775200 profile=fixed-upstream-100k log_n=13 log_t=168 moduli=140737488273409,140737488125953,140737487290369,140737487093761 packed_coefficients=1112 public_polynomials=1
+done server_finalize_s=0.203032962 correctness=pass

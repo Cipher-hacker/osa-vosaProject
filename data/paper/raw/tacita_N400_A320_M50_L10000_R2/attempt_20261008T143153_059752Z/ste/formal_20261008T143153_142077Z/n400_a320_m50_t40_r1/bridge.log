@@ -1,0 +1,2 @@
+ready setup_s=0.016192418 client_mean_s=0.013394546631249995 client_serial_wall_s=4.286254921999999 server_pre_s=0.275561956 client_bytes=61611520 profile=fixed-upstream-100k log_n=13 log_t=168 moduli=140737488273409,140737488125953,140737487290369,140737487093761 packed_coefficients=1112 public_polynomials=1
+done server_finalize_s=0.077407673 correctness=pass

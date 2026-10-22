@@ -1,0 +1,25 @@
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] ------------------------------------------------------------
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] NEW PROTOCOL RUN!
+[MPVAS-UD] SETUP PARAMETERS -> N: 200, K: 0, Dropouts: 40
+[MPVAS-UD] SETUP PARAMETERS -> N: 200, K: 0, Dropouts: 40
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39] will drop out of the protocol.
+[MPVAS-UD] Users [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39] will drop out of the protocol.
+mpvas_vector_progress=25/200
+mpvas_vector_progress=50/200
+mpvas_vector_progress=75/200
+mpvas_vector_progress=100/200
+mpvas_vector_progress=125/200
+mpvas_vector_progress=150/200
+mpvas_vector_progress=175/200
+mpvas_vector_progress=200/200
+mpvas_server_progress=25/200
+mpvas_server_progress=50/200
+mpvas_server_progress=75/200
+mpvas_server_progress=100/200
+mpvas_server_progress=125/200
+mpvas_server_progress=150/200
+mpvas_server_progress=175/200
+mpvas_server_progress=200/200
+protocol=mPVAS-UD-verification-only-real-pairing-vector curve=MNT224 security_bits=112 k=0 vector_domain_separation=per_coordinate n_clients=200 active_clients=160 dropouts=40 vector_len=10000 setup_s=1.130364 client_threads=32 warmup_coordinates_per_worker=1 repetitions=1 active_client_compute_mean_s=20.216098273 dropout_client_compute_mean_s=69.981127774 committee_compute_s=0.000000000 server_compute_s=77.997551456 verifier_compute_s=132.674006455 client_batch_wall_s=194.934978157 client_to_server_bytes=115604800 active_client_to_server_bytes=48003840 dropout_client_to_server_bytes=67600960 active_client_bytes_mean=300024.000 dropout_client_bytes_mean=1690024.000 client_to_verifier_bytes=0 server_to_verifier_bytes=2070684 committee_bytes=0 server_receive_bytes=115604800 server_send_bytes=2070684 verifier_receive_bytes=2070684 total_bytes=117675484 g1_serialized_bytes=30 gt_serialized_bytes=169 honest_correctness=pass forged_server_rejection=pass timing_scope=verification_increment_only wire=actual_charm_compressed_binary_without_base64_transport
