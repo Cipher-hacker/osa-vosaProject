@@ -1,14 +1,31 @@
-# OSA 最终实验代码包
+# OSA / VOSA Final Experiment Code Package
 
-先阅读 [运行与目录说明](README/RUN_GUIDE_CN.md)。
+Please read the [Run and Directory Guide](README/RUN_GUIDE_EN.md) ([中文版](README/RUN_GUIDE_CN.md)) first.
 
-本包包含已确认的旧版主实验、计算补测、修订绘图代码、384条正式测量的原始记录，以及原包已附带的依赖和锁文件。协议、计时方式、实验参数和32线程设置不变。
+This package contains the confirmed legacy main experiments, computation retests, revised plotting code, 384 raw records of formal measurements, as well as the dependencies and lockfiles bundled with the original package. Cryptographic protocols, timing methods, experimental parameters, and 32-thread configurations remain unchanged.
 
-- `data/paper/`：336条主实验记录。
-- `data/computation/`：48条计算补测记录。
-- `third_party/`：随包依赖；不是完全离线环境。
-- `README/`：运行步骤、目录说明与计时口径。
+## Directory Overview
 
-不包含真实联邦学习训练、L=1正式实验、被弃用的旧四协议掉线率包、生成图片、模型、虚拟环境或构建缓存。独立OSA掉线率实验及VOSA/mPVAS验证实验仍属于原主实验，不因删除旧四协议掉线率包而移除。
+- `data/paper/`: 336 main experiment records.
+- `data/computation/`: 48 computation retest records.
+- `protocols/`: Core implementations of cryptographic protocols (OSA, Willow, VOSA, OPA, TACITA, mPVAS).
+- `scripts/`: Build, environment setup, execution, monitoring, and plotting scripts.
+- `third_party/`: Bundled dependencies and lockfiles (note: requires network access for certain builds; not a completely offline environment).
+- `README/`: Detailed operational guides, directory structure explanations, and timing specifications:
+  - [Run Guide (EN)](README/RUN_GUIDE_EN.md) / [运行说明 (CN)](README/RUN_GUIDE_CN.md)
+  - [Computation Retest Methodology (EN)](README/COMPUTATION_EN.md) / [计算补测说明 (CN)](README/COMPUTATION_CN.md)
 
-从本包重画已有数据，无需重跑密码协议。正式实验仅支持Linux x86_64；绘图和数据校验也支持Windows。
+## Scope & Exclusions
+
+This package does **not** include:
+- Real federated learning model training (MNIST / CIFAR) or model weights.
+- Formal $L=1$ experiments.
+- Deprecated legacy four-protocol dropout packages.
+- Generated figure artifacts, virtual environments, or build caches.
+
+> The standalone OSA dropout rate experiment and VOSA/mPVAS verification experiments belong to the original main experiment suite and remain included.
+
+## System Requirements & Reproducibility
+
+- **Re-plotting existing data**: Supported on both **Linux** and **Windows** without re-running cryptographic protocols.
+- **Running formal cryptographic benchmarks**: Supports **Linux x86_64** only (minimum 32 logical CPU cores recommended to match original evaluation settings).
