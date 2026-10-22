@@ -11,7 +11,7 @@ The package includes:
 | Main suite | OSA/OPA/Willow/TACITA-STE comparisons at a fixed configuration and across client counts, committee sizes, and vector lengths; separate OSA dropout and client-count grid experiments; VOSA/mPVAS verification experiments | 336 |
 | Computation retest | Fixed N=1000, m=50, L=10000; four protocols at client dropout rates of 10%, 20%, 30%, and 40%; three runs per configuration | 48 |
 
-Historical CSV files are not used as new experimental results. `data/` explicitly stores historical raw records; new execution results go to `runs/` under `.work/`. This package does not include real MNIST/CIFAR training and does not require those datasets. The protocol benchmarks generate their inputs using the original code.
+Historical CSV files are not used as new experimental results. `data/` explicitly stores historical raw records; new execution results go to `runs/` under `.work/`. To run real federated learning training (MNIST/CIFAR-10), see the instructions in root `README.md` and `README/AUTODL_CPU_ZH.md`; cryptographic protocol benchmarks generate their inputs using the original code.
 
 ## 2. CPU and Threads: Original Settings Retained
 
